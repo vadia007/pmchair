@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="file" version="2.5" method="upgrade">
+	<name>TinyMCE uk-UA</name>
+	<creationDate>23.07.2012</creationDate>
+	<author>Joomla! Ukraine</author>
+	<authorEmail>denys@joomla-ua.org</authorEmail>
+	<authorUrl>www.joomla-ua.org</authorUrl>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>3.5.5</version>
+	<description>Ukrainian Language Package for TinyMCE 3.4.9 in Joomla 2.5</description>
+	<fileset>
+		<files target="media/editors">
+			<folder>tinymce/jscripts/tiny_mce/langs</folder>
+			<folder>tinymce/jscripts/tiny_mce/plugins</folder>
+			<folder>tinymce/jscripts/tiny_mce/themes</folder>
+		</files>
+	</fileset>
+</extension>

@@ -1,0 +1,11 @@
+.rssFeed { margin: 1em; }
+.rssBody ul { list-style: none; }
+.rssBody ul, .rssRow, .rssRow h4, .rssRow p { margin: 0; padding: 0; }
+.rssRow h4 { font-size: 16px; padding-bottom: 4px; }
+.rssRow { padding: 6px 0; clear: both; }
+	.rssRow div { margin: 4px 0; }
+	.rssRow p { font-size: 110%; }
+	.rssRow p img { width: 120px; height: auto; margin: 0 10px 10px 0; float: left; border: 1px solid #ccc; padding: 2px; }
+.odd, .even { border-bottom: 1px solid #f3f3f3; clear: both; }
+.odd p+p, .even p+p { padding-top: 6px; }
+.rssRow .rssMedia { padding: 0.5em; font-size: 1em; }

@@ -1,0 +1,15 @@
+.nivo-controlNav .nivo-arrow-border {
+	border-left-color: pink;
+	border-bottom-color: pink;
+	border-right-color: pink;
+	border-top-color: #B5B5B5;
+	filter: chroma(color=pink);
+}
+.nivo-controlNav .nivo-arrow {
+	margin-bottom: -4px;
+	border-left-color: pink;
+	border-bottom-color: pink;
+	border-right-color: pink;
+	border-top-color: #FFF;
+	filter: chroma(color=pink);
+}

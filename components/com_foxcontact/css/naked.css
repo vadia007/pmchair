@@ -1,0 +1,228 @@
+/* If you edit this file, your modifications will be overwritten during the next upgrade.
+Copy this stylesheet with a different name, edit it, and finally
+select your own custom css in "Advanced Options" of your forms */
+/*
+.foxcontainer h2 {
+}
+.foxform {
+}
+.foxform div
+{
+}
+.foxform label {
+}*/
+
+/* Message area at the top of the form after submit *//*
+.fox_messages {
+}
+.fox_messages li{
+}
+
+.foxform input, .foxform textarea {
+}
+.foxform input:hover, .foxform textarea:hover,
+.foxform input:focus, .foxform textarea:focus {
+}
+
+input.foxtext {
+}
+input.validfoxtext, textarea.validfoxtext {
+}
+input.invalidfoxtext, textarea.invalidfoxtext {
+}
+select.foxtext {
+}
+select.validfoxtext {
+}
+select.invalidfoxtext {
+}
+.foxcheckbox {
+}
+.validcheckbox {
+}
+.invalidcheckbox {
+}
+
+.fox_dropdown {
+	cursor:pointer;
+}
+.fox_dropdown option {
+}
+
+.defaultfoxfield {
+	border:1px solid #c0c0c0;
+}
+.validfoxfield {
+	border:1px solid rgb(80, 192, 80);
+
+}
+.invalidfoxfield {
+	border:1px solid rgb(192, 80, 80);
+}
+
+.outer_dropdown {
+	background:url("../../../media/com_foxcontact/images/dropdown-background.png") repeat-x;
+	height:28px;
+	display:none;
+	margin: 0 3px !important;
+	width: 100% !important;
+}
+
+.inner_dropdown {
+	color:#505050;
+	height: 28px;
+	padding: 0 5px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100% !important;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-color: transparent;
+
+}
+
+button.foxbutton {
+	cursor:pointer;
+	padding:3px 5px 3px 5px;
+}/*
+
+/* Submit button inner text */
+button.foxbutton span {
+}
+
+/* Mandatory field marker */
+/*.asterisk {
+font-weight: bold;
+}
+.asterisk:after {
+content: "*";
+}
+
+.fcaptchacontainer {
+margin: 0 3px !important;
+}
+.fcaptchafieldcontainer {
+display:table-cell;
+vertical-align:middle;
+padding:5px !important;
+}
+.fcaptchainputcontainer {
+padding-top:1em !important;
+}
+.fox_captcha_img {
+padding: 4px;
+border: 1px solid #C0C0C0;
+}
+.qq-uploader { position:relative; width: 100%;}
+
+.qq-upload-button {
+	padding:0 16px !important;
+	margin:16px 0 !important;
+	background:url("../../../media/com_foxcontact/images/button-background.png");
+	border:1px solid #C0C0C0;
+	cursor:pointer;
+	/*height:28px;*/
+/*	line-height:28px;
+	color:#505050;
+	text-shadow:1px 1px 0 #ffffff;
+	border-radius:14px 14px 14px 14px;
+	-moz-border-radius:14px 14px 14px 14px;
+	-webkit-border-radius:14px 14px 14px 14px;
+	box-shadow:0 0 7px rgba(192, 192, 192, 0.698);
+	-moz-box-shadow:0 0 7px rgba(192, 192, 192, 0.698);
+	-webkit-box-shadow:0 0 7px rgba(192, 192, 192, 0.698);
+}
+.qq-upload-button span {
+	color:#505050;
+}
+
+/*this fixes an issue with damned ie6-ie7*/
+/*.qq-upload-button-caption {
+vertical-align: top;
+}
+/*end fix*/
+
+/*.qq-upload-button-hover {
+background-position: 0 -28px;
+}
+.qq-upload-button-focus {outline:1px dotted black;}
+
+.qq-upload-drop-area {
+    position:absolute; top:0; left:0; width:100%; height:100%; min-height: 70px; z-index:2;
+    background:#FF9797; text-align:center;
+}
+.qq-upload-drop-area span {
+    display:block; position:absolute; top: 50%; width:100%; margin-top:-8px; font-size:16px;
+}
+.qq-upload-drop-area-active {background:#FF7171;}
+
+.qq-upload-list {padding:0 !important; list-style:none !important; clear:both;}
+.qq-upload-list li {
+margin:0 !important;
+padding:0 !important;
+padding: 4px 16px !important;
+list-style:none !important;
+/*background: url("../../../media/com_foxcontact/images/clip-16.png") no-repeat scroll 0 50% transparent !important;*/
+/*background-image: url("../../../media/com_foxcontact/images/clip-16.png") !important;
+background-repeat: no-repeat !important;
+}
+.qq-upload-file, .qq-upload-spinner, .qq-upload-size, .qq-upload-cancel, .qq-upload-failed-text {
+    margin: 0 4px;
+}
+
+.qq-upload-file {}
+.qq-upload-spinner {
+	display:inline-block;
+	background: url("../../../media/com_foxcontact/images/loading.gif");
+	width:15px;
+	height:15px;
+	vertical-align:text-bottom;
+}
+.qq-upload-size,.qq-upload-cancel {font-size:0.8em;}
+
+.qq-upload-failed-text {display:none;}
+.qq-upload-success-text {display:none;}
+.qq-upload-fail .qq-upload-failed-text {
+	display:inline;
+	padding: 0 20px;
+/*	font-size:0.8em;*/
+/*	line-height:16px;
+/*	background: url("../../../media/com_foxcontact/images/error-16.png") no-repeat scroll 0 50% transparent;*/
+/*	background-image: url("../../../media/com_foxcontact/images/error-16.png") !important;
+	background-repeat: no-repeat !important;
+}
+.qq-upload-success .qq-upload-success-text {
+	display:inline;
+	padding: 0 20px;
+	margin: 0 4px;
+	/*font-size:0.8em;*/
+/*	line-height:16px;
+/*	background: url("../../../media/com_foxcontact/images/ok-16.png") no-repeat scroll 0 50% transparent;*/
+/*	background-image: url("../../../media/com_foxcontact/images/ok-16.png") !important;
+	background-repeat: no-repeat !important;
+}
+/* Checkboxes */
+/*.fox_cbspan {
+    display: table-cell;
+    height: 20px; /* same as checkbox icon height */
+/*   padding: 0 24px; /* checkbox icon width + 4 px */
+/*    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: transparent;
+/* Depends on current language
+	background-position: left 50%; */
+}
+/*.fox_cbspan_true {
+/*	background: url("../../../media/com_foxcontact/images/checkbox-checked.png") no-repeat scroll left 50% transparent; */
+/*background-image: url("../../../media/com_foxcontact/images/checkbox-checked.png");
+}
+.fox_cbspan_false {
+/*	background: url("../../../media/com_foxcontact/images/checkbox-unchecked.png") no-repeat scroll left 50% transparent; */
+/*	background-image: url("../../../media/com_foxcontact/images/checkbox-unchecked.png");
+}
+
+/* Send a copy to myself checkbox */
+/*.fox_copy_to_sender {
+/*margin-left: 160px !important;*/
+}

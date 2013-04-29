@@ -1,0 +1,102 @@
+/* ===================================== TOOLBAR */
+
+.icon-48-controlpanel{
+        background-image: url(../images/toolbar/icon-48-controlpanel.png);  
+	background-position: left top;
+}
+
+.icon-48-templates{
+        background-image: url(../images/toolbar/icon-48-templates.png);  
+}
+
+.icon-48-popups{
+        background-image: url(../images/toolbar/icon-48-popups.png);  
+}
+
+.icon-48-imagemanager{
+        background-image: url(../images/toolbar/icon-48-imagemanager.png); 
+}
+.icon-32-AG_apply    { 
+        background-image: url(../images/toolbar/icon-32-AG_apply.png); 
+        display:block;  
+        height:32px;
+        width:32px;
+    
+}
+
+.icon-32-AG_reset    { 
+        background-image: url(../images/toolbar/icon-32-AG_reset.png);    
+        display:block;  
+        height:32px;
+        width:32px;        
+
+}
+
+.toolbar-list  {
+     text-align:right;
+}
+
+.toolbar-list ul li a span {
+    margin:0 auto;
+}
+
+.toolbar-list ul {
+    display:inline-block;
+    zoom:1;
+    
+}
+
+.toolbar-list ul li {
+    display:inline-block;
+    zoom:1;
+}
+
+
+.toolbar-list ul li a {
+    text-decoration:none;
+    color:#444;
+    display:inline-block;
+    zoom:1;
+    padding: 5px 5px 0px 5px;
+}
+
+.clr {
+    clear:both;
+}
+
+/* toolbar */
+
+div.toolbar {
+    display:block;
+    height:80px;
+}
+
+div.toolbar table
+{
+    float:right;
+}
+
+.AG_toolbar { padding: 10px; display:block; border-bottom-style:solid;}
+ 
+.AG_toolbar table.toolbar                           { border-collapse: collapse; padding: 0; margin: 0;     }
+.AG_toolbar table.toolbar td                        { padding: 1px 1px 1px 4px; text-align: center; color: #666; height: 48px; }
+.AG_toolbar table.toolbar td.spacer  { width: 10px; }
+.AG_toolbar table.toolbar td.divider { border-right: 1px solid #eee; width: 5px; } 
+ 
+.AG_toolbar table.toolbar span { float: none; width: 32px; height: 32px; margin: 0 auto; display: block; }
+ 
+.AG_toolbar table.toolbar a {
+	display: block;
+	float: left;
+        white-space: nowrap;
+        padding: 5px;
+        cursor: pointer;
+        color: #333;
+ }
+ 
+.AG_toolbar table.toolbar a:hover {
+	margin:0;
+        background-color: #ddd;
+        text-decoration: none;
+        color: #333;
+ }

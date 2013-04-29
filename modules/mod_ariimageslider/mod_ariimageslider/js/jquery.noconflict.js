@@ -1,0 +1,1 @@
+if (typeof(jQuery) != 'undefined') window.jQueryNivoSlider = jQuery.noConflict();

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="module" method="upgrade" client="site">
+	<name>ARI Image Slider</name>
+	<author>ARI Soft</author>
+	<creationDate>December 2012</creationDate>
+	<copyright>ARI Soft</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@ari-soft.com</authorEmail>
+	<authorUrl>www.ari-soft.com</authorUrl>
+	<version>2.0.5</version>
+	<description>ARI_IMAGE_SLIDER_MODULE</description>
+	<scriptfile>script.php</scriptfile>
+	<files folder="install">
+		<filename module="mod_ariimageslider">mod_ariimageslider.php</filename>
+		<filename module="mod_ariimageslider">mod_ariimageslider.xml</filename>
+		<filename>index.html</filename>
+		<filename>ariimageslider.ini</filename>
+		<folder>mod_ariimageslider/</folder>
+		<folder>tmpl/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">install/language/en-GB/en-GB.mod_ariimageslider.ini</language>
+		<language tag="en-GB">install/language/en-GB/en-GB.mod_ariimageslider.sys.ini</language>
+		<language tag="fa-IR">install/language/fa-IR/fa-IR.mod_ariimageslider.ini</language>
+		<language tag="fa-IR">install/language/fa-IR/fa-IR.mod_ariimageslider.sys.ini</language>
+		<language tag="pt-BR">install/language/pt-BR/pt-BR.mod_ariimageslider.ini</language>
+		<language tag="pt-BR">install/language/pt-BR/pt-BR.mod_ariimageslider.sys.ini</language>
+	</languages>
+</extension>

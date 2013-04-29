@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+    <name>Ukrainian Language Pack</name>
+    <packagename>uk-UA</packagename>
+    <version>2.5.7.3</version>
+    <url>http://www.joomla-ua.org</url>
+    <packager>Joomla! Ukraine</packager>
+    <packagerurl>http://www.joomla-ua.org</packagerurl>
+    <description><![CDATA[<div style="background: #fff; border: 1px #ccc solid; padding: 15px; overflow: hidden;"><iframe style="float: right; width: 70%; height: 560px; overflow-y: auto;" id="julatest" src="http://joomla-ua.org/latest" frameborder="0" scrolling="no"></iframe><h2 style="padding: 0 0 8px 0; margin: 0;font-weight: normal;">Український пакет локалізації Joomla 2.5</h2><p>Офіційна локалізація Joomla!</p><div id="system-message-container"><dl id="system-message"><dt class="message"></dt><dd class="message message"><ul><li><strong>Увага! Інформація про використання локалізації в комерційних цілях:</strong></li></ul></dd></dl></div><p style="font-weight: normal;">Якщо Ви використовуєте українську локалізацію для комерційних сайтів, ми будемо вдячні за пожертвування проекту Joomla! Україна, за рахунок вашого клієнту!</p><p style="font-weight: normal;">Пожертвування означає допомога у локалізації офіційного пакету локалізації Joomla! та сторонніх розширень, включаючи комерційні розширення.</p><p style="font-weight: normal;"><strong>Ви можете зробити пожертвування наступним чином:</strong><br /><br />WebMoney: Z162084860012 та R371967759323.</p>Демо: <a href="http://demo.joomla-ua.org/">demo.joomla-ua.org</a><br />Підтримка: <a href="http://joomla-ua.org/forum/">Форум Joomla! Україна</a><br /><br /><span style="font-size: 85%;">2006-2012 &copy; Joomla! Україна. Всі права захищені.</span></div>]]></description>
+    <files>
+        <file type="language" client="site" id="uk-UA">site_uk-UA.zip</file>
+        <file type="language" client="admin" id="uk-UA">admin_uk-UA.zip</file>
+        <file type="file" client="site" id="TinyMCE_uk-UA">tinymce_uk-UA.zip</file>
+        <file type="module" client="admin" id="uk-UA">mod_jumenu.zip</file>
+        <file type="module" client="admin" id="uk-UA">mod_junews.zip</file>
+    </files>
+    <updateservers>
+        <server type="collection" priority="1" name="Ukrainian language (uk-UA)">http://joomla-ua.org/update/lang/joomla25.xml</server>
+        <server type="collection" priority="2" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist.xml</server>
+    </updateservers>
+</extension>

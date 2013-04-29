@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+<name>Fox Contact Joomla 1.5</name>
+<installfile>j15install.php</installfile>
+<administration>
+</administration>
+</install>

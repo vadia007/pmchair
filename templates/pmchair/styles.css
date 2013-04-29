@@ -1,0 +1,1130 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+    text-decoration: none;
+}
+select, input, textarea        { vertical-align:middle; font:12px Tahoma, sans-serif;}
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:none; }
+a:hover                        { text-decoration:none; }
+ol li, ul li{
+    font-family: Arial;
+    font-size: 13px;
+    color: #272727;
+    line-height: 18px;
+}
+
+@font-face{
+	font-family: Ubuntu; 
+    src: url('../fonts/ubuntu-l.eot'); 
+	src: url('../fonts/ubuntu-l.eot?#iefix')
+	format('embedded-opentype'),
+	url('../fonts/ubuntu-l.woff') format('woff'),
+    url('../fonts/ubuntu-l.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: UbuntuMB; 
+    src: url('../fonts/ubuntu-b.eot'); 
+	src: url('../fonts/ubuntu-b.eot?#iefix')
+	format('embedded-opentype'),
+	url('../fonts/ubuntu-b.woff') format('woff'),
+    url('../fonts/ubuntu-b.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*------------------------------------FONTS-----------------------------------------*/
+html, body, #container { height: 100%; }
+body > #container { height: auto; min-height: 100%; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header_gradient{
+    width: 100%;
+    height: 130px;
+    border-top: 3px solid #00c6ff ;
+	background: url("../images/header_bg.jpg") no-repeat #1f63e8;
+	background-position: center; 
+	margin: 0 auto;
+}
+.header_wrapper{
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER,menu-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header h1{
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin: 25px 40px 7px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header .menu{
+    display: block;
+    overflow: hidden;
+    margin-top:60px ;
+}
+.header .menu li{
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin-right:31px ;
+
+}
+.header .menu li a{
+    display: block;
+    overflow: hidden;
+    padding-bottom: 7px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.header .menu li a:hover{
+    border-bottom: 4px solid #00c6ff;
+}
+.header .sign_in{
+    display: block;
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 10px;
+    background: url("../images/sign_in_shadow.png")no-repeat top center;
+}
+.header .sign_in a{
+    position: absolute;
+    display: block;
+    overflow:hidden;
+    height: 12px;
+    width: 38px;
+    padding: 0 4px;
+	background: url("../images/sign_in_shadow.png")no-repeat top center;
+    background-color: #00c5fe;
+    margin: 0px 0 0 15px;
+    border: 1px solid none;
+    border-radius: 0 0 3px 3px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+	line-height: 25px;
+    color: #00c5fe;
+    text-align: center;
+    -webkit-transition: .3s all ease-in-out;
+    -ms-transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+}
+.expanded{
+    height: 25px !important;
+    width: 38px !important;
+    padding: 10px 4px 2px !important;
+    color: #fff!important;
+}
+.header .menu li.active{
+    border-bottom: 4px solid #fff;
+}
+.header .menu li.active:hover{
+    border: none;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------Slider-CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.slider_bg{
+    background: url("../images/banner_bg.jpg")no-repeat center top ;
+	
+}
+.slider_gradient{
+    background:  #1f63e8 ;
+}
+
+
+.slider_wrapper{
+    display: block;
+    overflow: hidden;
+    height: 312px;
+    width: 940px;
+
+}
+.slider{
+	margin-top: 12px; 
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    width: 940px;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+}
+.sli-links-wrapper{
+    position: relative;
+}
+.sli-links{
+    display: block;
+    position: absolute;
+    top: -34px;
+    overflow: hidden;
+    width: 940px;
+    padding:10px 0;
+    text-align:center;
+    background: rgba(0, 0, 0, 0.4);
+}
+.sli-links .control-slide{
+    padding-right:6px;
+    display:inline-block;
+    width:10px;
+    height:10px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:  url(../images/radioBg.png) center bottom no-repeat;
+}
+.sli-links .control-slide:hover{
+    cursor:pointer;
+    background-position:center center;
+}
+.sli-links .control-slide.active{
+    background-position:center top;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------Announcements-CONTENT------------------------*/
+/*----------------------------------------------------------------------------------*/
+#announcement{
+	background: url("../images/announcem_infinite_bg.png")repeat;
+}
+.announcements_wrapper{
+    display: block;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 6px auto;
+	/*background: url("../images/announcement_bg.png")repeat-y transparent;*/
+}
+.announcement_bg{
+    width: 100%;
+    
+}
+.announcement{
+    display: block;
+    overflow: hidden;
+    padding:  15px 0px 16px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width:940px;
+	
+}
+.announcement li{
+    padding: 0 20px 5px 19px;
+}
+.announcement li img{
+    display: block;
+    float: left;
+    padding: 10px 20px 0 0;
+}
+.announcement h3{
+    color: #5da90c;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    
+}
+
+.announcement li p.image {
+    padding:0;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content { 
+ overflow: visible;
+ }
+ .item-page{
+	display: block;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 6px auto; 
+ 
+ 
+ }
+ 
+ 
+ 
+.contact, .edit,
+.tutors, .about,
+h4, h2, h3, h6,
+ol, .content ul, .pagination,
+.content p,.addattach, table
+{ margin-left: auto;
+  margin-right: auto;
+width:960px;}
+.tutors p{width:auto;}
+h2{
+    overflow: hidden;
+	display: block;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    height: 74px;
+    margin-top: 20px;
+	margin-bottom: 20px;
+    background: url("../images/title_shadow.png") no-repeat left center;
+	 
+	
+}
+.content h2 a{
+    position: absolute;
+    display: inline;
+    padding: 11px 12px;
+    margin: 15px 0 0px 0px;
+	background: url("../images/title_shadow.png") no-repeat left center;
+    background-color: #00c6ff;
+    color: #fff;
+    font-size: 25px;
+    line-height: 25px;
+    font-family: Ubuntu;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    float: none;
+}
+
+img{
+    display: block;
+    overflow: hidden;
+    float: left;
+	padding:10px 20px  10px 0 ;
+}
+
+
+p {
+    color: #272727;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px 0 25px;
+     
+}
+
+.readmore a{
+    display: block;
+    overflow: hidden;
+    float: right;
+    color: #00c6ff;
+    margin: 5px 0;
+    text-transform: lowercase;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 11px;
+    font-weight: bold;
+ font-family: Arial;
+}
+
+ .archive {
+    color: #B1B1B1;
+    display: inline-block;
+    float: right;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    overflow: hidden;
+    text-decoration: underline;
+    text-shadow: 0 1px 0 #B1B1B1;
+}
+.pagination li{display:inline;
+padding-left:10px;}
+.pagination ul, .pagination p{text-align:center;}
+.content .archive{
+    display: inline-block;
+    overflow: hidden;
+    float: right;
+    margin: 20px 0;
+    font-size: 17px;
+    text-decoration: underline;
+    color: #B1B1B1;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+
+ }
+.about ul li{
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.about ul li p{
+    margin: 0;
+    padding: 0;
+}
+.course ul li:before,
+.about  ul li:before,
+.tutors ul li:before,
+.tutor_single ul li:before{
+    content: "- \00A0";
+}
+div.bottom_ul{
+    /*display: block;
+    overflow: hidden;*/
+    margin: 6px auto;
+	background: #0064E9;
+	max-width: 1400px; /*width:100%;*/
+	padding: 30px 0;
+}
+.bottom_ul ul li:before{
+    content: "| \00A0\00A0";
+}
+.bottom_ul ul li{
+    padding-bottom: 5px;
+    color: #fff;
+}
+.bottom_ul ul li a{
+    color: #fff;
+    font-style: italic;
+    text-decoration: underline;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 13px;
+}
+/*.about ul li ul li{
+    font-family: Arial;
+    font-size: 13px;
+    color: #272727;
+    line-height: 18px;
+   
+}*/
+.about h6:nth-child(odd) img{
+      display: block;
+    float: right;
+    padding: 10px 20px 10px 0;
+}
+.about h6:nth-child(even) img{
+ 
+ display: block;
+    float: left;
+    padding: 10px 0px 10px 20px;
+margin:0;
+}
+iframe{
+    width: 380px;
+    float: left;
+    height:213px;
+    padding:  0;
+    margin: 0px 20px 10px 0;
+}
+.about iframe{
+    display: block;
+    float: none;
+    margin: 20px auto;
+}
+
+
+.course p,
+.tutors p,
+.tutor_single p,
+.tutors h4{
+    padding: 0;
+}
+
+.course img,
+.tutors img,
+.tutor_single img{
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.tutors  img,
+.tutor_single img{
+width:219px;
+height:263px;
+}
+.actions img{
+width:auto;
+height:auto;
+}
+.course h3{
+    padding: 7px 0 7px 15px;
+    margin-top: 5px;
+	margin-bottom: 5px;
+    border-left: 5px solid #00C7FF;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+
+.course .quote{
+	display: block;
+    overflow: hidden;
+    margin: 20px 0 20px 60px;
+    padding-left: 20px;
+    border-left: solid 1px #919191;
+    color: #919191;
+    font-style: italic;
+    font-weight: normal;
+    
+}
+.course .format ul li:before,
+.course ul.modul  li:before{
+    content: "";
+}
+.course .format span{
+    font-weight: bold;
+}
+.tutors .blog div div{
+   
+    overflow: hidden;
+}
+
+.tutors h4{
+    font-family: Arial;
+    font-size: 13px;
+    color: #272727;
+    line-height: 18px;
+    
+font-weight:normal;
+
+}
+
+.tutors h3, .tutor_single h3{
+    padding: 5px 0 10px ;
+    color: #00C7FF;
+    
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.tutors h3 a{    color: #00C7FF;
+     ;
+    font-family: Ubuntu;
+    font-size: 22px;}
+.tutors p{
+   display: block;
+    overflow: hidden;
+
+}
+
+.tutor_single h4{
+    margin-top: 10px;
+	margin-bottom:10px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+/*-----------Вкладення-----------*/
+.attachmentsList div{
+	   background: none repeat scroll 0 0 #0064E9;  
+margin:0;
+width:100%;
+ padding: 30px 0;
+ height:100%;
+}
+
+div.attachmentsList div tr{  margin: 15px 0;  padding-bottom: 5px;
+    color: #fff;}
+.attachmentsList  div tr a.at_url{
+  
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-style: italic;
+	 color: #fff;
+    font-style: italic;
+    font-family: Ubuntu;
+    font-weight: 500;
+}
+div.attachmentsList div table {border:none; }
+div.attachmentsList table tbody{width:auto;}
+.attachmentsList  disv img{padding:3px 0 0 0; margin:0;}
+div.attachmentsList table td{ position:relative;}
+div.attachmentsList table a.at_url:hover{color:#FFF; text-decoration: none;}
+div.attachmentsList table .at_filename a.at_url{padding-top:10px; float:left;}
+div.attachmentsList table tbody tr.even  td, div.attachmentsList tbody tr.even {  background: none repeat scroll 0 0 #0064E9; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------Edit--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.edit .readmore a{
+    overflow: hidden;
+    margin: 0;
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Tahoma,sans-serif;
+    text-decoration: none;
+}
+.edit h2{
+    background:none;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+	font-weight:bold;
+
+}
+.edit h2 a {
+    background:none;
+    color: #000;
+    font-size: 13px;
+    line-height: 13px;
+    margin:  0;
+    padding: 5px 0px;
+    position: absolute;
+	 font-weight:bold;}
+fieldset label, fieldset span.faux-label {
+    clear: left;
+    display: block;
+    float: left;
+}
+
+fieldset.adminform {
+    margin: 10px;
+    overflow: hidden;
+}
+fieldset {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: left;}
+
+#editor-xtd-buttons {
+    padding-top: 10px;
+}
+
+.button2-left a, .button2-right a,.button2-left button, .button2-right button, .button2-left span, .button2-right span {
+    color: #333333;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 1em;
+    height: 22px;
+    line-height: 22px;
+}
+div.button2-left > div.add_attachment {
+    background: url("add_attachment.png") no-repeat scroll 100% 0 transparent;
+}
+.button2-left a, .button2-left span, .button2-left button {
+    padding: 0 24px 0 6px;
+}
+.button2-left {
+    background: url("../images/j_button2_left.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    margin-right: 10px;
+}
+.button1 {
+    background: url("../images/j_button1_left.png") no-repeat scroll 0 0 transparent;
+    margin-left: 5px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+div.width-20 fieldset, div.width-30 fieldset, div.width-35 fieldset, div.width-40 fieldset, div.width-45 fieldset, div.width-50 fieldset, div.width-55 fieldset, div.width-60 fieldset, div.width-65 fieldset, div.width-70 fieldset, div.width-80 fieldset, div.width-100 fieldset {
+    background-color: #FFFFFF;
+    padding: 5px 17px 17px;
+}
+
+.edit iframe, #sbox-content iframe{
+    width: 100%;
+    height:100%;
+
+}
+.edit div.attachmentsList table img, .edit .formelm img{padding:0;}
+.edit .formelm {margin:0;}
+.edit .attachmentsList div {
+	   background: #FFF;  
+ padding: 0;
+ margin-bottom:5px;
+}
+
+
+.edit .attachmentsList div tr a.at_url{
+  
+    padding-left: 0;
+    text-decoration: none;
+    font-style: normal;
+	color: #000;
+    font-style: normal;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 13px;
+}
+.edit div.attachmentsList table { border: 1px solid #CCCCCC; }
+.edit div.attachmentsList table .at_icon img{ background: #0064E9;  }
+.edit div.attachmentsList table .at_filename a.at_url{padding-top:2px; }
+.edit div.attachmentsList table a.at_url:hover{color:#FF0000;    text-decoration: underline;}
+.edit div.attachmentsList table tbody tr.even  td, .edit div.attachmentsList tbody tr.even { background: none repeat scroll 0 0 #FFF; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------About-PROFESION--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+.item-page  p{
+
+	padding: 2px 2px;
+}
+.moduletable h2{
+	overflow: hidden;}
+
+
+.moduletable h2 a{
+    position: absolute;
+    display: inline;
+    padding: 11px 12px;
+    margin: 15px 0 0px 0px;
+	background: url("../images/title_shadow.png") no-repeat left center;
+    background-color: #00c6ff;
+    color: #fff;
+    font-size: 25px;
+    line-height: 25px;
+    font-family: Ubuntu;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    float: none;
+	
+	
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------Contacts---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.map{
+	float: left;
+    margin: 10px 25px 20px 0;
+    height: 300px;
+    width: 460px;
+    
+}
+
+.contakty{
+	overflow: hidden;
+	margin: 20px 10px;
+	padding: 10px 30px;
+	background:url("../images/map_shadow.png") 0px 20px  no-repeat ;
+	height: 300px;
+   	}
+.contakty ul {
+	margin-top: 40px
+	}	
+.contakty ul li  {
+	display:block;
+    padding-left:40px;
+	padding-bottom:15px;
+	}
+	
+.contakty li.adds  {
+	background:url("../images/adds.png") 3px 20px  no-repeat ;
+		}
+.contakty li.fax  {
+    background:url("../images/fax.png") 0px 1px  no-repeat ;
+	}
+.contakty li.phone {
+    background:url("../images/phone.png") 0px 1px  no-repeat ;
+}
+.contakty li.mail {
+    background:url("../images/mail.png") 0px 1px  no-repeat ;
+}
+.contakty li.site {
+    background:url("../images/mark.png") 3px 1px  no-repeat ;
+}
+
+#form .foxform{
+	width: 460px;
+	height: 400px;
+	margin:5px 5px ;
+}
+
+#form .foxform input {
+	margin: 10px 10px 0px -8px;
+	padding: 8px 8px;
+	width:457px;
+	overflow: hidden;
+	float: left;
+	text-align: left;
+	}
+#form .foxform textarea {
+	margin: 10px 10px 0px -8px;
+	padding: 8px 8px;
+	width:457px;
+	height:140px
+	}
+#form .foxform img{
+	margin: 17px 14px 0px -20px;
+	padding: 3px 6px;
+}	
+#form .fcaptchacontainer input{
+	margin: 15px 5px 0px -10px;
+	padding: 5px 5px;
+}
+#form .foxform button{
+	position: absolute;
+	margin: 15px 10px 0px 5px;
+	padding: 6px 30px;
+	border-radius:none;
+	color:#fff;
+	background-color: #5EA919;
+	border:none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------AUTHORIZATION--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+div.login {
+    background-color: #F4F4F4;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0 8px;
+	width:320px;
+	height:260px;
+	margin-top: 50px; 
+	margin-left: 400px;
+	
+}
+
+div.login label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 5px 5px 15px;
+}
+div.login input{
+	width: 90%;
+    margin: 0 10px;
+    display: inline-block;
+	height: 32px;
+	font-size: 15px;
+	padding: 2px 6px;
+	}
+div.login button,
+div.reset button,
+div.profile  a,
+div.profile-edit button,
+div.profile-edit a,
+div.logout button
+{
+	font-size: 13px;
+    height: 32px;
+	background-color: #5EA919;
+    border: 1px solid #DCDCDC;
+    border-radius: 2px 2px 2px 2px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 15px;
+	margin: 10px 5px 5px 9px;
+}
+#remember-lbl{
+	width: 150px;
+	float: right;
+	color: #666;
+	font-size: 13px;
+    line-height: 25px;
+    font-family: Ubuntu;
+	margin-top: 13px;
+
+}
+div.login input.inputbox  {
+    display: block;
+    position: absolute;
+    border: 1px solid #DCDCDC;
+    border-radius: 1px 1px 1px 1px;
+    cursor: pointer;
+    height: 13px;
+    margin-top: 20px;
+	margin-left: 110px;
+    width: 13px;
+}
+.remember ul {
+	margin: -65px 0 50px 425px;
+}
+
+.remember ul li a{
+    color: #00c6ff;
+    margin: 5px 0;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+     ;
+	font-family: Arial;
+	}
+.login fieldset, .profile fieldset, .profile-edit fieldset{border:none;}
+/*----------------Password----------------------*/
+div.reset {
+    display: block;
+    font-weight: bold;
+    margin: 10px 5px 5px 15px;
+}
+div.reset p, div.remind p{
+   
+	padding-bottom: 10px
+}
+div.reset input{
+	width:455px;
+    margin-top: 10px;
+    display: inline-block;
+	height: 32px;
+	font-size: 15px;
+	padding: 0 6px;
+}
+div.reset label {
+    font-weight: bold;
+    margin-top: 20px;
+}
+	
+div.reset button{
+    margin: 10px 5px 5px 0;
+}
+/*----------------login---------------------*/
+div.remind{
+    display: block;
+    font-weight: bold;
+    margin: 10px 5px 5px 15px;
+}
+
+div.remind input{
+	width:455px;
+    margin-top: 10px;
+    display: inline-block;
+	height: 32px;
+	font-size: 15px;
+	padding: 0 6px;
+}
+div.remind label {
+    font-weight: bold;
+    margin-top: 20px;
+}
+	
+div.remind button{
+	font-size: 13px;
+    height: 32px;
+    margin: 10px 5px 5px 0;
+	background-color: #5EA919;
+    border: 1px solid #DCDCDC;
+    border-radius: 2px 2px 2px 2px;
+    color: #444444;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 15px;
+}
+/*----------------Registration---------------------*/
+div.registration{
+    display: block;
+    font-weight: bold;
+    margin: 10px 5px 5px 15px;
+}
+div.registration p{
+    font-family: Arial;
+    font-size: 13px;
+    color: #272727;
+    line-height: 18px;
+    
+	padding-bottom: 10px
+}
+div.registration input{
+	width:455px;
+    margin-top: 10px;
+    display: inline-block;
+	height: 32px;
+	font-size: 15px;
+	padding: 0 6px;
+}
+div.registration label {
+    font-weight: bold;
+    margin-top: 20px;
+}
+	
+div.registration button{
+	font-size: 13px;
+    height: 32px;
+    margin: 10px 25px 5px 35px;
+	background-color: #5EA919;
+    border: 1px solid #DCDCDC;
+    border-radius: 2px 2px 2px 2px;
+    color: #444444;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 15px;
+}	
+div.registration a{
+	font-size: 13px;
+    height: 32px;
+    margin: 25px 0 25px 20px;
+	background-color: #5EA919;
+    border: 1px solid #DCDCDC;
+    border-radius: 2px 2px 2px 2px;
+    color: #444444;
+    font-weight: bold;
+    padding: 8px 40px;
+}	
+div.registration .text label {
+	font-size: 13px;
+    height: 32px;
+    padding-top: 10px ;
+	color: #444444;
+    font-size: 11px;
+    
+}	
+/*----------------------------users-profile----------------------------------------*/
+div.profile {margin-left:220px;}
+div.profile legend{
+    font-family: Arial;
+    font-size: 20px;
+    color: #000;
+    line-height: 18px;
+    font-weight: bold;
+	padding: 20px;
+}
+
+div.profile dt{
+    font-family: Arial;
+    font-size: 16px;
+    color: #272727;
+    line-height: 18px;
+    font-weight: bold;
+	padding: 0px 10px; 
+}
+div.profile dd{
+    font-family: Arial;
+    font-size: 15px;
+    color: #272727;
+    line-height: 18px;
+    padding-bottom: 20px
+}
+
+div.profile  a{
+	font-size: 18px;
+    margin: 25px 0 25px 20px;
+    padding: 8px 40px;
+	font-family: Arial;
+}
+/*-------------------------profile-edit----------------------*/
+div.profile-edit legend{
+    font-family: Arial;
+    font-size: 20px;
+    color: #000;
+    line-height: 18px;
+    font-weight: bold;
+	padding: 20px;
+}
+div.profile-edit{
+    display: block;
+    font-weight: bold;
+    margin: 10px 5px 5px 15px;
+}
+div.profile-edit form{
+margin-left:220px;}
+
+div.profile-edit p{
+    font-family: Arial;
+    font-size: 13px;
+    color: #272727;
+    line-height: 18px;
+   	padding-bottom: 10px
+}
+div.profile-edit input{
+	width:455px;
+    margin-top: 10px;
+    display: inline-block;
+	height: 32px;
+	font-size: 15px;
+	padding: 0 6px;
+}
+div.profile-edit label {
+    font-weight: bold;
+    margin-top: 20px;
+}
+	
+div.profile-edit button{
+    margin: 10px 25px 5px 35px;
+}	
+div.profile-edit a{
+    margin: 25px 0 25px 20px;
+    padding: 8px 40px;
+}	
+div.profile-edit .text label {
+	font-size: 13px;
+    height: 32px;
+    padding-top: 10px ;
+	color: #444444;
+    font-size: 11px;
+}
+
+/*--------------------------------------logout---------------------------*/
+div.logout button{
+	font-size: 16px;
+    margin: 35px 25px 25px 450px;
+}	
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.footer_wrapper{
+	display: block;
+    margin: 2px auto;
+    background: url("../images/footer_shadow.png") no-repeat 50% -50%;
+	clear: both;
+	position: absolute;
+	bottom: 0;
+	 height: 58px;
+ margin-top: -58px;
+	width: 100%;
+	
+	}
+.footer{
+    height: 60px;
+    background-color: #EFEFEF;
+    margin-top: 27px;
+}
+.footer p{
+	margin-left: auto;
+    padding: 11px;
+    text-align: center;
+    color: #00c6ff;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+	
+
+}

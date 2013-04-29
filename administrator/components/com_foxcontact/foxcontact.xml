@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>COM_FOXCONTACT</name>
+	<creationDate></creationDate>
+	<author>Demis Palma</author>
+	<authorEmail>demis@fox.ra.it</authorEmail>
+	<authorUrl>http://www.fox.ra.it/</authorUrl>
+	<copyright>Demis Palma</copyright>
+	<license>GNU/GPLv3</license>
+	<version>2.0.15</version>
+	<description>COM_FOXCONTACT_DESCRIPTION</description>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>foxcontact.php</filename>
+		<filename>foxcontact.inc</filename>
+		<filename>controller.php</filename>
+		<folder>css</folder>
+		<folder>helpers</folder>
+		<folder>js</folder>
+		<folder>lib</folder>
+		<folder>sef_ext</folder>
+		<folder>uploads</folder>
+		<folder>views</folder>
+	</files>
+
+	<media destination="com_foxcontact" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>fonts</folder>
+		<folder>mimetypes</folder>
+	</media>
+
+	<languages folder="site/language">
+		<language tag="af-ZA">af-ZA/af-ZA.com_foxcontact.ini</language>
+		<language tag="ar-AA">ar-AA/ar-AA.com_foxcontact.ini</language>
+		<language tag="bg-BG">bg-BG/bg-BG.com_foxcontact.ini</language>
+		<language tag="bs-BA">bs-BA/bs-BA.com_foxcontact.ini</language>
+		<language tag="ca-ES">ca-ES/ca-ES.com_foxcontact.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.com_foxcontact.ini</language>
+		<language tag="da-DK">da-DK/da-DK.com_foxcontact.ini</language>
+		<language tag="de-DE">de-DE/de-DE.com_foxcontact.ini</language>
+		<language tag="el-GR">el-GR/el-GR.com_foxcontact.ini</language>
+		<language tag="en-AU">en-AU/en-AU.com_foxcontact.ini</language>
+		<language tag="en-GB">en-GB/en-GB.com_foxcontact.ini</language>
+		<language tag="en-US">en-US/en-US.com_foxcontact.ini</language>
+		<language tag="es-ES">es-ES/es-ES.com_foxcontact.ini</language>
+		<language tag="et-EE">et-EE/et-EE.com_foxcontact.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.com_foxcontact.ini</language>
+		<language tag="fi-FI">fi-FI/fi-FI.com_foxcontact.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.com_foxcontact.ini</language>
+		<language tag="he-IL">he-IL/he-IL.com_foxcontact.ini</language>
+		<language tag="hr-HR">hr-HR/hr-HR.com_foxcontact.ini</language>
+		<language tag="hu-HU">hu-HU/hu-HU.com_foxcontact.ini</language>
+		<language tag="it-IT">it-IT/it-IT.com_foxcontact.ini</language>
+		<language tag="ja-JP">ja-JP/ja-JP.com_foxcontact.ini</language>
+		<language tag="lt-LT">lt-LT/lt-LT.com_foxcontact.ini</language>
+		<language tag="lv-LV">lv-LV/lv-LV.com_foxcontact.ini</language>
+		<language tag="mk-MK">mk-MK/mk-MK.com_foxcontact.ini</language>
+		<language tag="nb-NO">nb-NO/nb-NO.com_foxcontact.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.com_foxcontact.ini</language>
+		<language tag="nn-NO">nn-NO/nn-NO.com_foxcontact.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.com_foxcontact.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.com_foxcontact.ini</language>
+		<language tag="pt-PT">pt-PT/pt-PT.com_foxcontact.ini</language>
+		<language tag="ro-RO">ro-RO/ro-RO.com_foxcontact.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.com_foxcontact.ini</language>
+		<language tag="sk-SK">sk-SK/sk-SK.com_foxcontact.ini</language>
+		<language tag="sl-SI">sl-SI/sl-SI.com_foxcontact.ini</language>
+		<language tag="sr-RS">sr-RS/sr-RS.com_foxcontact.ini</language>
+		<language tag="sr-YU">sr-YU/sr-YU.com_foxcontact.ini</language>
+		<language tag="sv-SE">sv-SE/sv-SE.com_foxcontact.ini</language>
+		<language tag="th-TH">th-TH/th-TH.com_foxcontact.ini</language>
+		<language tag="tr-TR">tr-TR/tr-TR.com_foxcontact.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.com_foxcontact.ini</language>
+		<language tag="ur-PK">ur-PK/ur-PK.com_foxcontact.ini</language>
+		<language tag="zh-CN">zh-CN/zh-CN.com_foxcontact.ini</language>
+		<language tag="zh-TW">zh-TW/zh-TW.com_foxcontact.ini</language>
+	</languages>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/com_foxcontact/images/email-16.png">COM_FOXCONTACT_MENU</menu>
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>foxcontact.php</filename>
+			<filename>foxinstall.php</filename>
+			<filename>j15.xml</filename>
+			<filename>j15install.php</filename>
+			<filename>LICENSE.txt</filename>
+			<folder>models</folder>
+			<folder>sql</folder>
+		</files>
+
+		<languages folder="language">
+			<language tag="af-ZA">af-ZA/af-ZA.com_foxcontact.ini</language>
+			<language tag="ar-AA">ar-AA/ar-AA.com_foxcontact.ini</language>
+			<language tag="bg-BG">bg-BG/bg-BG.com_foxcontact.ini</language>
+			<language tag="bs-BA">bs-BA/bs-BA.com_foxcontact.ini</language>
+			<language tag="ca-ES">ca-ES/ca-ES.com_foxcontact.ini</language>
+			<language tag="cs-CZ">cs-CZ/cs-CZ.com_foxcontact.ini</language>
+			<language tag="da-DK">da-DK/da-DK.com_foxcontact.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_foxcontact.ini</language>
+			<language tag="el-GR">el-GR/el-GR.com_foxcontact.ini</language>
+			<language tag="en-AU">en-AU/en-AU.com_foxcontact.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_foxcontact.ini</language>
+			<language tag="en-US">en-US/en-US.com_foxcontact.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_foxcontact.ini</language>
+			<language tag="et-EE">et-EE/et-EE.com_foxcontact.ini</language>
+			<language tag="fa-IR">fa-IR/fa-IR.com_foxcontact.ini</language>
+			<language tag="fi-FI">fi-FI/fi-FI.com_foxcontact.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_foxcontact.ini</language>
+			<language tag="he-IL">he-IL/he-IL.com_foxcontact.ini</language>
+			<language tag="hr-HR">hr-HR/hr-HR.com_foxcontact.ini</language>
+			<language tag="hu-HU">hu-HU/hu-HU.com_foxcontact.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_foxcontact.ini</language>
+			<language tag="ja-JP">ja-JP/ja-JP.com_foxcontact.ini</language>
+			<language tag="lt-LT">lt-LT/lt-LT.com_foxcontact.ini</language>
+			<language tag="lv-LV">lv-LV/lv-LV.com_foxcontact.ini</language>
+			<language tag="mk-MK">mk-MK/mk-MK.com_foxcontact.ini</language>
+			<language tag="nb-NO">nb-NO/nb-NO.com_foxcontact.ini</language>
+			<language tag="nl-NL">nl-NL/nl-NL.com_foxcontact.ini</language>
+			<language tag="nn-NO">nn-NO/nn-NO.com_foxcontact.ini</language>
+			<language tag="pl-PL">pl-PL/pl-PL.com_foxcontact.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_foxcontact.ini</language>
+			<language tag="pt-PT">pt-PT/pt-PT.com_foxcontact.ini</language>
+			<language tag="ro-RO">ro-RO/ro-RO.com_foxcontact.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.com_foxcontact.ini</language>
+			<language tag="sk-SK">sk-SK/sk-SK.com_foxcontact.ini</language>
+			<language tag="sl-SI">sl-SI/sl-SI.com_foxcontact.ini</language>
+			<language tag="sr-RS">sr-RS/sr-RS.com_foxcontact.ini</language>
+			<language tag="sr-YU">sr-YU/sr-YU.com_foxcontact.ini</language>
+			<language tag="sv-SE">sv-SE/sv-SE.com_foxcontact.ini</language>
+			<language tag="th-TH">th-TH/th-TH.com_foxcontact.ini</language>
+			<language tag="tr-TR">tr-TR/tr-TR.com_foxcontact.ini</language>
+			<language tag="uk-UA">uk-UA/uk-UA.com_foxcontact.ini</language>
+			<language tag="ur-PK">ur-PK/ur-PK.com_foxcontact.ini</language>
+			<language tag="zh-CN">zh-CN/zh-CN.com_foxcontact.ini</language>
+			<language tag="zh-TW">zh-TW/zh-TW.com_foxcontact.ini</language>
+
+			<language tag="af-ZA">af-ZA/af-ZA.com_foxcontact.sys.ini</language>
+			<language tag="ar-AA">ar-AA/ar-AA.com_foxcontact.sys.ini</language>
+			<language tag="bg-BG">bg-BG/bg-BG.com_foxcontact.sys.ini</language>
+			<language tag="bs-BA">bs-BA/bs-BA.com_foxcontact.sys.ini</language>
+			<language tag="ca-ES">ca-ES/ca-ES.com_foxcontact.sys.ini</language>
+			<language tag="cs-CZ">cs-CZ/cs-CZ.com_foxcontact.sys.ini</language>
+			<language tag="da-DK">da-DK/da-DK.com_foxcontact.sys.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_foxcontact.sys.ini</language>
+			<language tag="el-GR">el-GR/el-GR.com_foxcontact.sys.ini</language>
+			<language tag="en-AU">en-AU/en-AU.com_foxcontact.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_foxcontact.sys.ini</language>
+			<language tag="en-US">en-US/en-US.com_foxcontact.sys.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_foxcontact.sys.ini</language>
+			<language tag="et-EE">et-EE/et-EE.com_foxcontact.sys.ini</language>
+			<language tag="fa-IR">fa-IR/fa-IR.com_foxcontact.sys.ini</language>
+			<language tag="fi-FI">fi-FI/fi-FI.com_foxcontact.sys.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_foxcontact.sys.ini</language>
+			<language tag="he-IL">he-IL/he-IL.com_foxcontact.sys.ini</language>
+			<language tag="hr-HR">hr-HR/hr-HR.com_foxcontact.sys.ini</language>
+			<language tag="hu-HU">hu-HU/hu-HU.com_foxcontact.sys.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_foxcontact.sys.ini</language>
+			<language tag="ja-JP">ja-JP/ja-JP.com_foxcontact.sys.ini</language>
+			<language tag="lt-LT">lt-LT/lt-LT.com_foxcontact.sys.ini</language>
+			<language tag="lv-LV">lv-LV/lv-LV.com_foxcontact.sys.ini</language>
+			<language tag="mk-MK">mk-MK/mk-MK.com_foxcontact.sys.ini</language>
+			<language tag="nb-NO">nb-NO/nb-NO.com_foxcontact.sys.ini</language>
+			<language tag="nl-NL">nl-NL/nl-NL.com_foxcontact.sys.ini</language>
+			<language tag="nn-NO">nn-NO/nn-NO.com_foxcontact.sys.ini</language>
+			<language tag="pl-PL">pl-PL/pl-PL.com_foxcontact.sys.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_foxcontact.sys.ini</language>
+			<language tag="pt-PT">pt-PT/pt-PT.com_foxcontact.sys.ini</language>
+			<language tag="ro-RO">ro-RO/ro-RO.com_foxcontact.sys.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.com_foxcontact.sys.ini</language>
+			<language tag="sk-SK">sk-SK/sk-SK.com_foxcontact.sys.ini</language>
+			<language tag="sl-SI">sl-SI/sl-SI.com_foxcontact.sys.ini</language>
+			<language tag="sr-RS">sr-RS/sr-RS.com_foxcontact.sys.ini</language>
+			<language tag="sr-YU">sr-YU/sr-YU.com_foxcontact.sys.ini</language>
+			<language tag="sv-SE">sv-SE/sv-SE.com_foxcontact.sys.ini</language>
+			<language tag="th-TH">th-TH/th-TH.com_foxcontact.sys.ini</language>
+			<language tag="tr-TR">tr-TR/tr-TR.com_foxcontact.sys.ini</language>
+			<language tag="uk-UA">uk-UA/uk-UA.com_foxcontact.sys.ini</language>
+			<language tag="ur-PK">ur-PK/ur-PK.com_foxcontact.sys.ini</language>
+			<language tag="zh-CN">zh-CN/zh-CN.com_foxcontact.sys.ini</language>
+			<language tag="zh-TW">zh-TW/zh-TW.com_foxcontact.sys.ini</language>
+		</languages>
+
+	</administration>
+
+	<scriptfile>install.php</scriptfile>
+
+	<install> <!-- Runs on install -->
+		<sql><file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file></sql>
+	</install>
+
+	<uninstall> <!-- Runs on uninstall -->
+		<sql><file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file></sql>
+	</uninstall>
+
+	<update> <!-- Runs on update; New in 1.6 -->
+		<schemas><schemapath type="mysql">sql/updates/mysql</schemapath></schemas>
+	</update>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Foxcontact update site"><![CDATA[http://www.fox.ra.it/phocadownload/foxcontact.xml]]></server>
+	</updateservers>
+
+	<modules>
+		<module folder="modules" module="mod_foxcontact" name="Fox Contact" />
+	</modules>
+
+</extension>
+

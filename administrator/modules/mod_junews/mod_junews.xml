@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="administrator">
+	<name>Новини Joomla! Україна</name>
+    <creationDate>23.09.2012</creationDate>
+    <author>Joomla! Україна</author>
+    <authorEmail>denys@joomla.org"</authorEmail>
+    <authorUrl>http://www.joomla.org/</authorUrl>
+    <copyright>Copyright (C) 2006-2012 Joomla! Україна</copyright>
+    <license>GNU General Public License v3</license>
+    <version>1.20.0</version>
+    <description></description>    
+	<description>Модуль новин Joomla! Україна</description>
+	<files>
+		<filename module="mod_junews">mod_junews.php</filename>
+        <folder>sql</folder>
+        <folder>assets</folder>
+	</files>
+	<install>
+        <sql>
+	       <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+	</install>
+
+	<uninstall>
+	   <sql>
+	       <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+       </sql>
+    </uninstall>
+
+	<update>
+	    <schemas>
+	        <schemapath type="mysql">sql/updates/mysql</schemapath>
+	    </schemas>
+	</update>
+</extension>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+  <name>PHP Module</name>
+  <author>Fiji Web Design</author>
+  <creationDate>Jun 17, 2008</creationDate>
+  <copyright>(C) 2004 Fiji Web Design</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>gabe@fijiwebdesign.com</authorEmail>
+  <authorUrl>www.fijiwebdesign.com</authorUrl>
+  <version>1.0.Beta</version>
+  <description>
+  	<![CDATA[
+  	This module allows you to add any html/javascript/css and PHP to a Joomla or Mambo module position. It can be used to add affiliate code, copy and paste codes, google adsense etc. You can copy the module using Joomla's module copy feature, to create multiple versions with different content. This is module is based on mod_html so has all the mod_html features, plus the ability to include php code. You can find some copy and paste code exmaples here: <a href="http://fijiwebdesign.com/content/view/94/55/1/1/" target="_blank">http://fijiwebdesign.com/content/view/94/55/1/1/</a>
+	]]>
+  </description>
+  <files>
+    <filename module="mod_php">mod_php.php</filename>
+	  <filename>tmp/index.html</filename>
+	  <filename>elements/code.php</filename>
+  </files>
+    <config><fields name="params"><fieldset name="basic">
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Suffix to append to the CSS class attribute of this module." />
+		<field name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		<field addfieldpath="/modules/mod_php/elements" name="php" type="code" default="" label="PHP, HTML, JS, CSS" description="Add any PHP, Html, Javascript or CSS Here. Eg: Google Adsense Code, Copy and Paste Scripts etc. You can find some custom code at: http://fijiwebdesign.com/content/view/94/55/1/1/" cols="70" rows="30" />
+  		<field name="@spacer" type="spacer" default="" label="" description="" />
+		<field name="eval_php" type="list" default="1" label="Evaluate PHP" description="Allows you to embed PHP into your content. If you are just using HTML, CSS, and JavaScript in this module, you could turn this off for faster performance.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		<field name="discovery" type="list" default="1" label="Allow Discovery" description="Allows Fiji Web Design to discover that you use mod_php. Used for debugging and usage reports.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+  </fieldset></fields></config>
+</extension>

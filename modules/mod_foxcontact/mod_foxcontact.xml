@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>Fox Contact</name>
+	<creationDate></creationDate>
+	<author>Demis Palma</author>
+	<authorEmail>demis@fox.ra.it</authorEmail>
+	<authorUrl>http://www.fox.ra.it/</authorUrl>
+	<copyright>Demis Palma</copyright>
+	<license>GNU/GPLv3</license>
+	<version>2.0.15</version>
+	<description>MOD_FOXCONTACT_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_foxcontact">mod_foxcontact.php</filename>
+		<filename>mod_foxcontact.inc</filename>
+		<filename>mod_foxcontact.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>sql</folder>
+		<folder>tmpl</folder>
+	</files>
+
+
+	<languages folder="language">
+		<language tag="af-ZA">af-ZA/af-ZA.mod_foxcontact.ini</language>
+		<language tag="ar-AA">ar-AA/ar-AA.mod_foxcontact.ini</language>
+		<language tag="bg-BG">bg-BG/bg-BG.mod_foxcontact.ini</language>
+		<language tag="bs-BA">bs-BA/bs-BA.mod_foxcontact.ini</language>
+		<language tag="ca-ES">ca-ES/ca-ES.mod_foxcontact.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.mod_foxcontact.ini</language>
+		<language tag="da-DK">da-DK/da-DK.mod_foxcontact.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_foxcontact.ini</language>
+		<language tag="el-GR">el-GR/el-GR.mod_foxcontact.ini</language>
+		<language tag="en-AU">en-AU/en-AU.mod_foxcontact.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_foxcontact.ini</language>
+		<language tag="en-US">en-US/en-US.mod_foxcontact.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_foxcontact.ini</language>
+		<language tag="et-EE">et-EE/et-EE.mod_foxcontact.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.mod_foxcontact.ini</language>
+		<language tag="fi-FI">fi-FI/fi-FI.mod_foxcontact.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.mod_foxcontact.ini</language>
+		<language tag="he-IL">he-IL/he-IL.mod_foxcontact.ini</language>
+		<language tag="hr-HR">hr-HR/hr-HR.mod_foxcontact.ini</language>
+		<language tag="hu-HU">hu-HU/hu-HU.mod_foxcontact.ini</language>
+		<language tag="it-IT">it-IT/it-IT.mod_foxcontact.ini</language>
+		<language tag="ja-JP">ja-JP/ja-JP.mod_foxcontact.ini</language>
+		<language tag="lt-LT">lt-LT/lt-LT.mod_foxcontact.ini</language>
+		<language tag="lv-LV">lv-LV/lv-LV.mod_foxcontact.ini</language>
+		<language tag="mk-MK">mk-MK/mk-MK.mod_foxcontact.ini</language>
+		<language tag="nb-NO">nb-NO/nb-NO.mod_foxcontact.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.mod_foxcontact.ini</language>
+		<language tag="nn-NO">nn-NO/nn-NO.mod_foxcontact.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.mod_foxcontact.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_foxcontact.ini</language>
+		<language tag="pt-PT">pt-PT/pt-PT.mod_foxcontact.ini</language>
+		<language tag="ro-RO">ro-RO/ro-RO.mod_foxcontact.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_foxcontact.ini</language>
+		<language tag="sk-SK">sk-SK/sk-SK.mod_foxcontact.ini</language>
+		<language tag="sl-SI">sl-SI/sl-SI.mod_foxcontact.ini</language>
+		<language tag="sr-RS">sr-RS/sr-RS.mod_foxcontact.ini</language>
+		<language tag="sr-YU">sr-YU/sr-YU.mod_foxcontact.ini</language>
+		<language tag="sv-SE">sv-SE/sv-SE.mod_foxcontact.ini</language>
+		<language tag="th-TH">th-TH/th-TH.mod_foxcontact.ini</language>
+		<language tag="tr-TR">tr-TR/tr-TR.mod_foxcontact.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.mod_foxcontact.ini</language>
+		<language tag="ur-PK">ur-PK/ur-PK.mod_foxcontact.ini</language>
+		<language tag="zh-CN">zh-CN/zh-CN.mod_foxcontact.ini</language>
+		<language tag="zh-TW">zh-TW/zh-TW.mod_foxcontact.ini</language>
+
+		<language tag="af-ZA">af-ZA/af-ZA.mod_foxcontact.sys.ini</language>
+		<language tag="ar-AA">ar-AA/ar-AA.mod_foxcontact.sys.ini</language>
+		<language tag="bg-BG">bg-BG/bg-BG.mod_foxcontact.sys.ini</language>
+		<language tag="bs-BA">bs-BA/bs-BA.mod_foxcontact.sys.ini</language>
+		<language tag="ca-ES">ca-ES/ca-ES.mod_foxcontact.sys.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.mod_foxcontact.sys.ini</language>
+		<language tag="da-DK">da-DK/da-DK.mod_foxcontact.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_foxcontact.sys.ini</language>
+		<language tag="el-GR">el-GR/el-GR.mod_foxcontact.sys.ini</language>
+		<language tag="en-AU">en-AU/en-AU.mod_foxcontact.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_foxcontact.sys.ini</language>
+		<language tag="en-US">en-US/en-US.mod_foxcontact.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_foxcontact.sys.ini</language>
+		<language tag="et-EE">et-EE/et-EE.mod_foxcontact.sys.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.mod_foxcontact.sys.ini</language>
+		<language tag="fi-FI">fi-FI/fi-FI.mod_foxcontact.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.mod_foxcontact.sys.ini</language>
+		<language tag="he-IL">he-IL/he-IL.mod_foxcontact.sys.ini</language>
+		<language tag="hr-HR">hr-HR/hr-HR.mod_foxcontact.sys.ini</language>
+		<language tag="hu-HU">hu-HU/hu-HU.mod_foxcontact.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.mod_foxcontact.sys.ini</language>
+		<language tag="ja-JP">ja-JP/ja-JP.mod_foxcontact.sys.ini</language>
+		<language tag="lt-LT">lt-LT/lt-LT.mod_foxcontact.sys.ini</language>
+		<language tag="lv-LV">lv-LV/lv-LV.mod_foxcontact.sys.ini</language>
+		<language tag="mk-MK">mk-MK/mk-MK.mod_foxcontact.sys.ini</language>
+		<language tag="nb-NO">nb-NO/nb-NO.mod_foxcontact.sys.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.mod_foxcontact.sys.ini</language>
+		<language tag="nn-NO">nn-NO/nn-NO.mod_foxcontact.sys.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.mod_foxcontact.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_foxcontact.sys.ini</language>
+		<language tag="pt-PT">pt-PT/pt-PT.mod_foxcontact.sys.ini</language>
+		<language tag="ro-RO">ro-RO/ro-RO.mod_foxcontact.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_foxcontact.sys.ini</language>
+		<language tag="sk-SK">sk-SK/sk-SK.mod_foxcontact.sys.ini</language>
+		<language tag="sl-SI">sl-SI/sl-SI.mod_foxcontact.sys.ini</language>
+		<language tag="sr-RS">sr-RS/sr-RS.mod_foxcontact.sys.ini</language>
+		<language tag="sr-YU">sr-YU/sr-YU.mod_foxcontact.sys.ini</language>
+		<language tag="sv-SE">sv-SE/sv-SE.mod_foxcontact.sys.ini</language>
+		<language tag="th-TH">th-TH/th-TH.mod_foxcontact.sys.ini</language>
+		<language tag="tr-TR">tr-TR/tr-TR.mod_foxcontact.sys.ini</language>
+		<language tag="uk-UA">uk-UA/uk-UA.mod_foxcontact.sys.ini</language>
+		<language tag="ur-PK">ur-PK/ur-PK.mod_foxcontact.sys.ini</language>
+		<language tag="zh-CN">zh-CN/zh-CN.mod_foxcontact.sys.ini</language>
+		<language tag="zh-TW">zh-TW/zh-TW.mod_foxcontact.sys.ini</language>
+	</languages>
+
+	<install>
+		<sql><file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file></sql>
+	</install>
+
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_foxcontact/models/fields">
+
+			<fieldset name="basic">
+				<field type="fenvironment"/>
+				<field type="ftranschecker"/>
+				<field type="fheader" default="COM_FOXCONTACT_EMAIL_OPTIONS_LBL" icon="email-16.png"/>
+				<!-- translate_default="1" doesn't work for the module -->
+				<field name="to_address" type="ftext" size="26" label="COM_FOXCONTACT_EMAIL_TO" description="COM_FOXCONTACT_EMAIL_TO_DSC" wizard="COM_FOXCONTACT_TOADDRESS_DFLT" required="true"/>
+				<field name="cc_address" type="text" size="26" label="COM_FOXCONTACT_EMAIL_CC_LBL" description="COM_FOXCONTACT_EMAIL_CC_DSC" />
+				<field name="bcc_address" type="text" size="26" label="COM_FOXCONTACT_EMAIL_BCC_LBL" description="COM_FOXCONTACT_EMAIL_BCC_DSC" />
+				<field name="email_subject" type="ftext" size="26" label="COM_FOXCONTACT_SUBJECT" description="COM_FOXCONTACT_EMAIL_SUBJECT_DSC" wizard="COM_FOXCONTACT_SUBJECT_DFLT" />
+				<!--
+				<field name="email_sender_identity" type="list" label="COM_FOXCONTACT_EMAIL_SENDER_IDENTITY_LBL" description="COM_FOXCONTACT_EMAIL_SENDER_IDENTITY_DSC" default="1">
+				<option value="0">COM_FOXCONTACT_EMAIL_SENDER_SUBMITTER</option>
+				<option value="1">COM_FOXCONTACT_EMAIL_SENDER_SYSTEM_ADMIN</option>
+				<option value="2">COM_FOXCONTACT_EMAIL_SENDER_ADMIN_SMTP_USERNAME</option>
+				</field>
+				-->
+				<field type="fheader" default="COM_FOXCONTACT_JMESSENGER_OPTIONS_LBL" icon="email-16.png" helpurl="http://www.fox.ra.it/forum/16-submissions-via-joomla-messenger/3692-joomla-private-messages-delivery-configuration.html"/>
+				<field name="jmessenger_user" type="user" label="COM_FOXCONTACT_JMESSENGER_LBL" description="COM_FOXCONTACT_JMESSENGER_DSC" />
+				<field type="spacer" label="COM_FOXCONTACT_JMESSENGER_LINK"/>
+
+			</fieldset>
+
+			<fieldset name="fields" label="COM_FOXCONTACT_FIELDS_LBL">
+
+				<field type="fheader" default="COM_FOXCONTACT_PAGE_OPTIONS_LBL" icon="page-16.png" helpurl="http://www.fox.ra.it/forum/20-form-fields/609-page-heading.html"/>
+				<field name="page_subheading" type="ftext" filter="safehtml" size="26" label="COM_FOXCONTACT_SUBHEADING_LBL" description="COM_FOXCONTACT_SUBHEADING_DSC" wizard="COM_FOXCONTACT_SUBHEADING_DFLT"/>
+				<field name="formwidth" type="text" label="COM_FOXCONTACT_FORM_WIDTH_LBL" default="100" size="4" />
+				<field name="formunit" type="list" label="COM_FOXCONTACT_UNITS_LBL" default="%">
+					<option value="px">COM_FOXCONTACT_PIXELS</option>
+					<option value="%">COM_FOXCONTACT_PERCENT</option>
+				</field>
+				<field name="customhtml0" type="ftextarea" filter="safehtml" rows="4" cols="48" label="COM_FOXCONTACT_TEXT_TOP_LBL" description="COM_FOXCONTACT_TEXT_TOP_DSC" wizard="COM_FOXCONTACT_TOPTEXT_DFLT" />
+				<field name="customhtml0display" type="hidden" default="1" />
+				<field name="customhtml0order" type="hidden" default="-1000"/>
+				<field name="customhtml1" type="ftextarea" filter="safehtml" rows="4" cols="48" label="COM_FOXCONTACT_TEXT_BOTTOM_LBL" description="COM_FOXCONTACT_TEXT_BOTTOM_DSC" wizard="COM_FOXCONTACT_BOTTOMTEXT_DFLT" />
+				<field name="customhtml1display" type="hidden" default="1" />
+				<field name="customhtml1order" type="hidden" default="1000"/>
+
+				<field type="fheader" default="COM_FOXCONTACT_LABELS_LBL" icon="labels-16.png" helpurl="http://www.fox.ra.it/forum/20-form-fields/779-field-labels.html"/>
+				<field name="labelsdisplay" type="list" label="COM_FOXCONTACT_LABELS_LAYOUT_LBL" default="2">
+					<option value="1">COM_FOXCONTACT_LABELS_OUTSIDE</option>
+					<option value="0">COM_FOXCONTACT_LABELS_INSIDE</option>
+				</field>
+				<field name="labelswidth" type="text" label="COM_FOXCONTACT_LABELS_WIDTH_LBL" description="COM_FOXCONTACT_LABELS_WIDTH_DSC" default="230" size="4" />
+				<field name="labelsunit" type="list" label="COM_FOXCONTACT_UNITS_LBL" default="px">
+					<option value="px">COM_FOXCONTACT_PIXELS</option>
+					<option value="%">COM_FOXCONTACT_PERCENT</option>
+				</field>
+
+				<field type="fheader" default="COM_FOXCONTACT_SPECIAL_FIELDS_LBL" icon="user-16.png" />
+
+				<field name="sender0" type="ftext" size="26" label="COM_FOXCONTACT_NAME_REQUEST_LBL" description="" wizard="COM_FOXCONTACT_YOUR_NAME_DFLT" />
+				<field name="sender0display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="2">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="sender0order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="5"/>
+				<field type="spacer" />
+
+				<field name="sender1" type="ftext" size="26" label="COM_FOXCONTACT_ADDRESS_REQUEST_LBL" description="" wizard="COM_FOXCONTACT_YOUR_EMAIL_DFLT" />
+				<field name="sender1display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="2">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="sender1order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="10"/>
+				<field name="sender1isemail" type="hidden" default="1" />
+				<field type="spacer" />
+
+				<field name="senderwidth" type="text" label="COM_FOXCONTACT_WIDTH_LBL" description="COM_FOXCONTACT_SIZE" default="85" size="4" />
+				<field name="senderunit" type="list" label="COM_FOXCONTACT_UNITS_LBL" default="%">
+					<option value="px">COM_FOXCONTACT_PIXELS</option>
+					<option value="%">COM_FOXCONTACT_PERCENT</option>
+				</field>
+				<field type="spacer" />
+
+				<field type="fheader" default="COM_FOXCONTACT_TEXTFIELDS_LBL" icon="textfield-16.png"/>
+
+				<field name="text0" type="ftext" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" wizard="COM_FOXCONTACT_TEXT0_DFLT" />
+				<field name="text0display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="1">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text0order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="15"/>
+				<field type="spacer" />
+
+				<field name="text1" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="text1display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text1order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="20"/>
+				<field type="spacer" />
+
+				<field name="text2" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="text2display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text2order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="25"/>
+				<field type="spacer" />
+
+				<field name="text3" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="text3display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text3order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="30"/>
+				<field type="spacer" />
+
+				<field name="text4" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="text4display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text4order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="35"/>
+				<field type="spacer" />
+
+				<field name="text5" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="text5display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text5order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="40"/>
+				<field type="spacer" />
+
+				<field name="text6" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="text6display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text6order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="45"/>
+				<field type="spacer" />
+
+				<field name="text7" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="text7display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text7order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="50"/>
+				<field type="spacer" />
+
+				<field name="text8" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="text8display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text8order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="55"/>
+				<field type="spacer" />
+
+				<field name="text9" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="text9display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="text9order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="60"/>
+				<field type="spacer" />
+
+				<field name="textwidth" type="text" label="COM_FOXCONTACT_WIDTH_LBL" description="COM_FOXCONTACT_SIZE" default="85" size="4" />
+				<field name="textunit" type="list" label="COM_FOXCONTACT_UNITS_LBL" default="%">
+					<option value="px">COM_FOXCONTACT_PIXELS</option>
+					<option value="%">COM_FOXCONTACT_PERCENT</option>
+				</field>
+				<field type="fspacer" label="Need more fields?" url="http://www.fox.ra.it/forum/20-form-fields/1211-adding-more-fields.html"/>
+
+				<field type="fheader" default="COM_FOXCONTACT_DROPDOWNFIELDS_LBL" icon="dropdown-16.png" helpurl="http://www.fox.ra.it/forum/20-form-fields/575-dropdown-list-fields.html"/>
+
+				<field name="dropdown0" type="ftext" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" wizard="COM_FOXCONTACT_DROPDOWN0_DFLT"/>
+				<field name="dropdown0display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="1">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="dropdown0values" type="ftextarea" rows="3" cols="30" label="COM_FOXCONTACT_DROPDOWNITEMS_LBL" description="COM_FOXCONTACT_DROPDOWNITEMS_DSC" wizard="COM_FOXCONTACT_DROPDOWN0V_DFLT" />
+				<field name="dropdown0order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="65"/>
+				<field type="spacer" />
+
+				<field name="dropdown1" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="dropdown1display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="dropdown1values" type="textarea" rows="3" cols="30" label="COM_FOXCONTACT_DROPDOWNITEMS_LBL" description="COM_FOXCONTACT_DROPDOWNITEMS_DSC" />
+				<field name="dropdown1order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="70"/>
+				<field type="spacer" />
+
+				<field name="dropdown2" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="dropdown2display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="dropdown2values" type="textarea" rows="3" cols="30" label="COM_FOXCONTACT_DROPDOWNITEMS_LBL" description="COM_FOXCONTACT_DROPDOWNITEMS_DSC" />
+				<field name="dropdown2order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="75"/>
+				<field type="spacer" />
+
+				<field name="dropdownwidth" type="text" label="COM_FOXCONTACT_WIDTH_LBL" description="COM_FOXCONTACT_SIZE" default="85" size="4" />
+				<field name="dropdownunit" type="list" label="COM_FOXCONTACT_UNITS_LBL" default="%">
+					<option value="px">COM_FOXCONTACT_PIXELS</option>
+					<option value="%">COM_FOXCONTACT_PERCENT</option>
+				</field>
+				<field type="fspacer" label="Need more fields?" url="http://www.fox.ra.it/forum/20-form-fields/1211-adding-more-fields.html"/>
+
+				<field type="fheader" default="COM_FOXCONTACT_TEXTAREAFIELD_LBL" description="COM_FOXCONTACT_TEXTAREAFIELD_DSC" icon="textarea-16.png"/>
+
+				<field name="textarea0" type="ftext" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" wizard="COM_FOXCONTACT_TEXTAREA0_DFLT"/>
+				<field name="textarea0display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="1">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="textarea0order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="80"/>
+				<field type="spacer" />
+
+				<field name="textarea1" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="textarea1display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="textarea1order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="85"/>
+				<field type="spacer" />
+
+				<field name="textarea2" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="textarea2display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="textarea2order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="90"/>
+				<field type="spacer" />
+
+				<field name="textareawidth" type="text" label="COM_FOXCONTACT_WIDTH_LBL" description="" default="85" size="5" />
+				<field name="textareaheight" type="text" label="COM_FOXCONTACT_HEIGHT_LBL" description="" default="180" size="5" />
+				<field name="textareaunit" type="list" label="COM_FOXCONTACT_UNITS_LBL" default="%">
+					<option value="px">COM_FOXCONTACT_PIXELS</option>
+					<option value="%">COM_FOXCONTACT_PERCENT</option>
+				</field>
+				<field type="fspacer" label="Need more fields?" url="http://www.fox.ra.it/forum/20-form-fields/1211-adding-more-fields.html"/>
+
+				<field type="fheader" default="COM_FOXCONTACT_CHECKBOXFIELDS_LBL" icon="checkbox-16.png"/>
+
+				<field name="checkbox0" type="ftext" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" wizard="COM_FOXCONTACT_CHECKBOX0_DFLT"/>
+				<field name="checkbox0display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="1">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="checkbox0order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="95"/>
+				<field type="spacer" />
+
+				<field name="checkbox1" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="checkbox1display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="checkbox1order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="100"/>
+				<field type="spacer" />
+
+				<field name="checkbox2" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="checkbox2display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="checkbox2order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="105"/>
+				<field type="spacer" />
+
+				<field name="checkbox3" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="checkbox3display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="checkbox3order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="110"/>
+				<field type="spacer" />
+
+				<field name="checkbox4" type="text" filter="safehtml" label="COM_FOXCONTACT_FIELDNAME_LBL" description="COM_FOXCONTACT_FIELDNAME_DSC" size="26" />
+				<field name="checkbox4display" type="list" label="COM_FOXCONTACT_FIELD_STATE" description="JFIELD_ENABLED_DESC" default="0">
+					<option value="0">JDISABLED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="2">JOPTION_REQUIRED</option>
+				</field>
+				<field name="checkbox4order" type="text" label="JFIELD_ORDERING_LABEL" description="" size="5" default="115"/>
+				<field type="spacer" />
+
+				<field type="fspacer" label="Need more fields?" url="http://www.fox.ra.it/forum/20-form-fields/1211-adding-more-fields.html"/>
+
+				<field type="fheader" default="COM_FOXCONTACT_UPLOAD_LBL" description="" icon="clip-16.png"/>
+				<field name="uploaddisplay" type="list" label="COM_FOXCONTACT_UPLOAD_ENABLED_LBL" description="COM_FOXCONTACT_UPLOAD_ENABLED_DSC" default="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="uploadmethod" type="list" label="COM_FOXCONTACT_UPLOAD_METHOD_LBL" description="COM_FOXCONTACT_UPLOAD_METHOD_DSC" default="1">
+					<option value="1">COM_FOXCONTACT_UPLOAD_METHOD_LINK</option>
+					<option value="2">COM_FOXCONTACT_UPLOAD_METHOD_ATTACH</option>
+					<option value="3">COM_FOXCONTACT_UPLOAD_METHOD_BOTH</option>
+				</field>
+
+				<field name="upload" type="ftext" filter="safehtml" label="COM_FOXCONTACT_UPLOAD_FIELD_LBL" description="" wizard="COM_FOXCONTACT_UPLOAD_FIELD_DFLT" />
+				<field name="uploadmax_file_size" type="text" label="COM_FOXCONTACT_UPLOAD_MAXSIZE_LBL" description="COM_FOXCONTACT_UPLOAD_MAXSIZE_DSC" default="10000" size="5"/>
+
+				<field type="fconditionalwarninglabel" description="" default="COM_FOXCONTACT_FUNCTION_DISABLED" icon="information-16.png" triggerkey="mimefilter" triggervalue="disabled" triggerdata="http://www.fox.ra.it/forum/5-support/265-some-file-type-not-allowed.html#292" />
+
+				<field name="upload_filter" type="fconditionallist" label="COM_FOXCONTACT_UPLOAD_FILTER_LBL" description="COM_FOXCONTACT_UPLOAD_FILTER_DSC" default="1" icon="information-16.png" triggerkey="mimefilter" triggervalue="disabled" triggerdata="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field type="spacer" class="text" label="COM_FOXCONTACT_UPLOAD_RULES_LBL" description="" />
+				<field name="upload_audio" type="fconditionallist" label="COM_FOXCONTACT_UPLOAD_AUDIO_LBL" description="COM_FOXCONTACT_UPLOAD_AUDIO_DSC" default="0" icon="information-16.png" triggerkey="mimefilter" triggervalue="disabled" triggerdata="1">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="upload_video" type="fconditionallist" label="COM_FOXCONTACT_UPLOAD_VIDEO_LBL" description="COM_FOXCONTACT_UPLOAD_VIDEO_DSC" default="0" triggerkey="mimefilter" triggervalue="disabled" triggerdata="1">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="upload_images" type="fconditionallist" label="COM_FOXCONTACT_UPLOAD_IMAGES_LBL" description="COM_FOXCONTACT_UPLOAD_IMAGES_DSC" default="1" triggerkey="mimefilter" triggervalue="disabled" triggerdata="1">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="upload_documents" type="fconditionallist" label="COM_FOXCONTACT_UPLOAD_DOCUMENTS_LBL" description="COM_FOXCONTACT_UPLOAD_DOCUMENTS_DSC" default="1" triggerkey="mimefilter" triggervalue="disabled" triggerdata="1">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="upload_archives" type="fconditionallist" label="COM_FOXCONTACT_UPLOAD_ARCHIVES_LBL" description="COM_FOXCONTACT_UPLOAD_ARCHIVES_DSC" default="1" triggerkey="mimefilter" triggervalue="disabled" triggerdata="1">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field type="fheader" default="COM_FOXCONTACT_SUBMIT_BUTTON_LBL" icon="submit-16.png" helpurl="http://www.fox.ra.it/forum/20-form-fields/636-submit-button.html" />
+				<field name="submittext" type="ftext" size="26" label="COM_FOXCONTACT_SUBMIT_TEXT_LBL" description="COM_FOXCONTACT_SUBMIT_TEXT_DSC" wizard="JSUBMIT" />
+				<field name="submittype" type="list" label="COM_FOXCONTACT_SUBMIT_TYPE_LBL" description="COM_FOXCONTACT_SUBMIT_TYPE_DSC" default="0">
+					<option value="0">COM_FOXCONTACT_BUTTON</option>
+					<option value="1">COM_FOXCONTACT_INPUT</option>
+				</field>
+				<field name="submiticon" type="filelist" label="COM_FOXCONTACT_SUBMIT_ICON_LBL" description="COM_FOXCONTACT_SUBMIT_ICON_DSC" default="" directory="media/com_foxcontact/images/submit" filter="\.png$" exclude="" stripext="" hide_default="true"/>
+
+				<field type="fheader" default="COM_FOXCONTACT_RESET_BUTTON_LBL" icon="submit-16.png" />
+				<field name="resetbutton" type="radio" default="0" label="COM_FOXCONTACT_ENABLED">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="resettext" type="ftext" size="26" label="COM_FOXCONTACT_SUBMIT_TEXT_LBL" description="COM_FOXCONTACT_SUBMIT_TEXT_DSC" wizard="COM_FOXCONTACT_RESET" />
+				<field name="resettype" type="list" label="COM_FOXCONTACT_SUBMIT_TYPE_LBL" description="COM_FOXCONTACT_SUBMIT_TYPE_DSC" default="0">
+					<option value="0">COM_FOXCONTACT_BUTTON</option>
+					<option value="1">COM_FOXCONTACT_INPUT</option>
+				</field>
+				<field name="reseticon" type="filelist" label="COM_FOXCONTACT_SUBMIT_ICON_LBL" description="COM_FOXCONTACT_SUBMIT_ICON_DSC" default="" directory="media/com_foxcontact/images/reset" filter="\.png$" exclude="" stripext="" hide_default="true"/>
+
+			</fieldset>
+
+			<fieldset name="events" label="COM_FOXCONTACT_EVENTS_LBL">
+
+				<field type="fheader" default="COM_FOXCONTACT_EVENTS_TEXT_LBL" icon="information-16.png" helpurl="http://www.fox.ra.it/forum/21-responses-to-events/707-thank-you-message.html"/>
+				<!-- filter="raw" and filter="safehtml" attributes prevent from joomla to parse and remove html code written into textareas -->
+				<field name="email_sent_action" type="list" label="COM_FOXCONTACT_THANKYOU_ACTION_LBL" description="COM_FOXCONTACT_THANKYOU_ACTION_DSC" default="0">
+					<option value="0">COM_FOXCONTACT_THANKYOU_ACTION_SHOWMSG</option>
+					<option value="1">COM_FOXCONTACT_THANKYOU_ACTION_REDIRECT</option>
+					<option value="2">COM_FOXCONTACT_THANKYOU_ACTION_REFRESH</option>
+				</field>
+				<field name="email_sent_text" type="ftextarea" filter="safehtml" rows="4" cols="48" label="COM_FOXCONTACT_THANKYOU_TEXT_LBL" description="COM_FOXCONTACT_THANKYOU_TEXT_DSC" wizard="COM_FOXCONTACT_SENTTEXT_DFLT" />
+				<field name="email_sent_textdisplay" type="hidden" default="1" />
+				<field name="email_sent_page" type="menuitem" label="COM_FOXCONTACT_THANKYOU_PAGE_LBL" description="COM_FOXCONTACT_THANKYOU_PAGE_DSC" />
+
+				<field type="fheader" default="COM_FOXCONTACT_EMAIL_COPY_TTL" icon="email-copy-16.png" helpurl="http://www.fox.ra.it/forum/20-form-fields/1212-send-a-copy-or-a-confirmatin-to-the-submiter.html"/>
+				<field name="copy_to_submitter" type="list" label="COM_FOXCONTACT_EMAIL_COPY_LBL" description="COM_FOXCONTACT_EMAIL_COPY_DSC" default="1">
+					<option value="0">COM_FOXCONTACT_NEVER</option>
+					<option value="1">COM_FOXCONTACT_ALWAYS</option>
+					<option value="2">COM_FOXCONTACT_ON_REQUEST</option>
+				</field>
+				<field name="email_copy_subject" type="ftext" size="26" label="COM_FOXCONTACT_EMAIL_SUBJECT_LBL" wizard="COM_FOXCONTACT_EMAIL_COPY_SUBJECT_DFLT" />
+				<field name="email_copy_text" type="ftextarea" rows="4" cols="48" label="COM_FOXCONTACT_THANKYOU_TEXT_LBL" wizard="COM_FOXCONTACT_SENTTEXT_DFLT" />
+				<field name="email_copy_summary" type="list" label="COM_FOXCONTACT_EMAIL_COPY_SUMMARY_LBL" description="COM_FOXCONTACT_EMAIL_COPY_SUMMARY_DSC" default="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+			</fieldset>
+
+			<fieldset name="security" label="COM_FOXCONTACT_SECURITY_LBL">
+
+				<field type="fheader" default="COM_FOXCONTACT_ANTISPAM_LBL" description="COM_FOXCONTACT_ANTISPAM_DSC" icon="shield-16.png"/>
+				<field name="spam_check" type="list" label="COM_FOXCONTACT_ANTISPAM_ENABLED_LBL" description="" default="1">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="spam_words" type="ftextarea" cols="30" rows="3" label="COM_FOXCONTACT_ANTISPAM_WORDS_LBL" description="COM_FOXCONTACT_ANTISPAM_WORDS_DSC" wizard="COM_FOXCONTACT_SPAMWORDS_DFLT"/>
+
+				<field name="spam_detected_text" type="ftextarea" rows="4" cols="48" filter="safehtml" label="COM_FOXCONTACT_ANTISPAM_MESSAGE_LBL" description="COM_FOXCONTACT_ANTISPAM_MESSAGE_DSC" wizard="COM_FOXCONTACT_SPAMTEXT_DFLT" />
+				<field name="spam_detected_textdisplay" type="hidden" default="1" />
+
+				<field type="fheader" default="COM_FOXCONTACT_STDCAPTCHA_LBL" icon="stdcaptcha-16.png"/>
+				<field type="fconditionalwarninglabel" description="" default="COM_FOXCONTACT_FUNCTION_DISABLED" icon="information-16.png" triggerkey="captchadrawer" triggervalue="disabled" triggerdata="http://www.fox.ra.it/forum/2-documentation/414-minimum-requirements-for-classic-captcha.html" />
+
+				<field name="stdcaptchadisplay" type="fconditionallist" label="COM_FOXCONTACT_STDCAPTCHA_ENABLED_LBL" description="" default="0" triggerkey="captchadrawer" triggervalue="disabled" triggerdata="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="stdcaptcha" type="ftext" label="COM_FOXCONTACT_STDCAPTCHA_FIELD_LBL" description="" wizard="COM_FOXCONTACT_STDCAPTCHA_FIELD_DFLT" />
+
+				<field name="stdcaptchatype" type="list" label="COM_FOXCONTACT_STDCAPTCHATYPE_LBL" description="" default="0">
+					<option value="0">COM_FOXCONTACT_STDCAPTCHATYPE_STD</option>
+					<option value="1">COM_FOXCONTACT_STDCAPTCHATYPE_MATH</option>
+				</field>
+
+				<field name="stdcaptcha_length" type="text" label="COM_FOXCONTACT_STDCAPTCHA_CHARS_LBL" description="COM_FOXCONTACT_STDCAPTCHA_CHARS_DSC" default="5" size="5"/>
+
+				<field name="stdcaptchawidth" type="text" label="COM_FOXCONTACT_STDCAPTCHA_WIDTH_LBL" description="COM_FOXCONTACT_STDCAPTCHA_WIDTH_DSC" default="150" size="5"/>
+				<field name="stdcaptchaheight" type="text" label="COM_FOXCONTACT_STDCAPTCHA_HEIGHT_LBL" description="COM_FOXCONTACT_STDCAPTCHA_HEIGHT_DSC" default="75" size="5"/>
+
+				<field name="stdcaptchafont" type="filelist" label="COM_FOXCONTACT_STDCAPTCHA_FONT_LBL" description="COM_FOXCONTACT_STDCAPTCHA_FONT_DSC" default="" directory="media/com_foxcontact/fonts" filter="\.ttf$" exclude="" stripext="" hide_default="true"/>
+				<field name="stdcaptchafontmin" type="text" label="COM_FOXCONTACT_STDCAPTCHA_MINSIZE_LBL" description="COM_FOXCONTACT_STDCAPTCHA_MINSIZE_DSC" default="14" size="5"/>
+				<field name="stdcaptchafontmax" type="text" label="COM_FOXCONTACT_STDCAPTCHA_MAXSIZE_LBL" description="COM_FOXCONTACT_STDCAPTCHA_MAXSIZE_DSC" default="20" size="5"/>
+				<field name="stdcaptchaangle" type="text" label="COM_FOXCONTACT_STDCAPTCHA_ANGLE_LBL" description="COM_FOXCONTACT_STDCAPTCHA_ANGLE_DSC" default="20" size="5"/>
+
+				<field name="stdcaptcha_backgroundcolor" type="text" label="COM_FOXCONTACT_STDCAPTCHA_BACKGROUND_COLOR_LBL" default="#ffffff" size="5"/>
+				<field name="stdcaptcha_textcolor" type="text" label="COM_FOXCONTACT_STDCAPTCHA_TEXT_COLOR_LBL" default="#191919" size="5"/>
+				<field name="stdcaptcha_disturbcolor" type="text" label="COM_FOXCONTACT_STDCAPTCHA_DISTURB_COLOR_LBL" description="COM_FOXCONTACT_STDCAPTCHA_DISTURB_COLOR_DSC" default="#c8c8c8" size="5"/>
+
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="stylesheet" type="filelist" label="COM_FOXCONTACT_ALT_CSS_LBL" description="COM_FOXCONTACT_ALT_CSS_DSC" default="neon.css" hide_none="true" directory="components/com_foxcontact/css" filter="\.css$" exclude="" stripext="" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+
+			<fieldset name="newsletter" label="COM_FOXCONTACT_NEWSLETTER_INTEGRATION_LBL">
+				<field type="fheader" default="COM_FOXCONTACT_ACYMAILING_LBL" icon="newsletter.png"/>
+				<field name="acymailing" type="radio" default="0" label="COM_FOXCONTACT_ENABLED">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="acymailing_lists" type="fsql" multiple="true" size="5" label="COM_FOXCONTACT_NEWSLETTER_LISTS_LBL" description="COM_FOXCONTACT_NEWSLETTER_LISTS_DSC"
+					query="select listid, name from #__acymailing_list where `published` = 1 ORDER BY `ordering` ASC"
+					key_field="listid" value_field="name">
+				</field>
+				<field name="acymailing_checkboxes" type="list" label="COM_FOXCONTACT_NEWSLETTER_DISPLAY_CHECKBOXES_LBL" description="COM_FOXCONTACT_NEWSLETTER_DISPLAY_CHECKBOXES_DSC" default="hidden|hidden">
+					<option value="hidden|hidden">COM_FOXCONTACT_NEWSLETTER_SUBSCRIPTION_AUTOMATIC</option>
+					<option value="hidden|checkbox">COM_FOXCONTACT_NEWSLETTER_SUBSCRIPTION_CHECKBOXES</option>
+					<option value="checkbox|hidden">COM_FOXCONTACT_NEWSLETTER_SUBSCRIPTION_GLOBAL</option>
+					<option value="checkbox|label">COM_FOXCONTACT_NEWSLETTER_SUBSCRIPTION_SUMMARY</option>
+				</field>
+
+				<field name="acymailing_auto_checked" type="list" label="COM_FOXCONTACT_NEWSLETTER_AUTO_CHECKED_LBL" description="COM_FOXCONTACT_NEWSLETTER_AUTO_CHECKED_DSC" default="0">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field type="fheader" default="COM_FOXCONTACT_JNEWS_LBL" icon="newsletter.png"/>
+				<field name="jnews" type="radio" default="0" label="COM_FOXCONTACT_ENABLED">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="jnews_lists" type="fsql" multiple="true" size="5" label="COM_FOXCONTACT_NEWSLETTER_LISTS_LBL" description="COM_FOXCONTACT_NEWSLETTER_LISTS_DSC"
+					query="select id, list_name from #__jnews_lists where `published` = 1 ORDER BY `id` ASC"
+					key_field="id" value_field="list_name">
+				</field>
+				<field name="jnews_checkboxes" type="list" label="COM_FOXCONTACT_NEWSLETTER_DISPLAY_CHECKBOXES_LBL" description="COM_FOXCONTACT_NEWSLETTER_DISPLAY_CHECKBOXES_DSC" default="hidden|hidden">
+					<option value="hidden|hidden">COM_FOXCONTACT_NEWSLETTER_SUBSCRIPTION_AUTOMATIC</option>
+					<option value="hidden|checkbox">COM_FOXCONTACT_NEWSLETTER_SUBSCRIPTION_CHECKBOXES</option>
+					<option value="checkbox|hidden">COM_FOXCONTACT_NEWSLETTER_SUBSCRIPTION_GLOBAL</option>
+					<option value="checkbox|label">COM_FOXCONTACT_NEWSLETTER_SUBSCRIPTION_SUMMARY</option>
+				</field>
+				<field name="jnews_auto_checked" type="list" label="COM_FOXCONTACT_NEWSLETTER_AUTO_CHECKED_LBL" description="COM_FOXCONTACT_NEWSLETTER_AUTO_CHECKED_DSC" default="0">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field type="fheader" default="COM_FOXCONTACT_NEWSLETTER_PLUGIN_LBL" icon="plugin.png"/>
+				<field name="othernewsletters" type="radio" label="COM_FOXCONTACT_ENABLED" description="COM_FOXCONTACT_NEWSLETTER_PLUGIN_DSC" default="1">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+	<!--
+	<updateservers>
+	<server type="extension" priority="1" name="Foxcontact update site"><![CDATA[http://www.fox.ra.it/phocadownload/foxcontact.xml]]></server>
+	</updateservers>
+	-->
+</extension>

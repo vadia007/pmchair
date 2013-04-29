@@ -1,0 +1,2 @@
+function ReloadFCaptcha(id){document.getElementById(id).src=document.getElementById(id).src+'&';}
+function BuildReloadButton(id){document.getElementById(id).src = document.getElementById(id).src.replace("transparent.gif", "reload-16.png");}

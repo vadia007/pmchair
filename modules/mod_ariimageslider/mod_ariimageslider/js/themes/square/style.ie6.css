@@ -1,0 +1,19 @@
+.nivo-directionNav a.nivo-prevNav {
+	background:transparent; 
+	background-position: 0 0;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/joomla5/modules/mod_ariimageslider/mod_ariimageslider/js/themes/square/images/left_nav.png, sizingMethod='scale');
+}
+
+.nivo-directionNav a.nivo-nextNav {
+	background:transparent; 
+	background-position: 0 0;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/joomla5/modules/mod_ariimageslider/mod_ariimageslider/js/themes/square/images/right_nav.png, sizingMethod='scale');
+}
+
+DIV.nivo-controlNav .nivo-arrow-border {
+	top: -3px;
+}
+
+DIV.nivo-controlNav .nivo-arrow {
+	top: -4px;
+}

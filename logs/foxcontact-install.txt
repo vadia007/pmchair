@@ -1,0 +1,45 @@
+2013-02-02 14:54:26 [installscript] Running on php 5.4.6-1ubuntu1.1 | Linux | safe_mode: 0 | interface: apache2handler
+2013-02-02 14:54:26 [installscript] Determining correct file permissions...  [100777]
+2013-02-02 14:54:26 [installscript] setting permissions for [/var/www/pmchair/components/com_foxcontact/lib/captcha-drawer.php]... [1]
+2013-02-02 14:54:26 [installscript] setting permissions for [/var/www/pmchair/components/com_foxcontact/lib/debug-off.php]... [1]
+2013-02-02 14:54:26 [installscript] setting permissions for [/var/www/pmchair/components/com_foxcontact/lib/debug-on.php]... [1]
+2013-02-02 14:54:26 [installscript] setting permissions for [/var/www/pmchair/components/com_foxcontact/lib/file-uploader.php]... [1]
+2013-02-02 14:54:26 [installscript] setting permissions for [/var/www/pmchair/components/com_foxcontact/lib/functions.php]... [1]
+2013-02-02 14:54:26 [installscript] Determining correct directory permissions...  [40777]
+2013-02-02 14:54:26 [installscript] setting permissions for [/var/www/pmchair/components]... [0]
+2013-02-02 14:54:26 [installscript] setting permissions for [/var/www/pmchair/components/com_foxcontact]... [1]
+2013-02-02 14:54:26 [installscript] setting permissions for [/var/www/pmchair/components/com_foxcontact/lib]... [1]
+2013-02-02 14:54:26 [fcaptchaimage] --- Determining if this system is able to draw captcha images ---
+2013-02-02 14:54:26 [fcaptchaimage] gd extension found. Let's see if it works.
+2013-02-02 14:54:26 [fcaptchaimage] GD Version... [2.0]
+2013-02-02 14:54:26 [fcaptchaimage] FreeType Support... [1]
+2013-02-02 14:54:26 [fcaptchaimage] FreeType Linkage... [with freetype]
+2013-02-02 14:54:26 [fcaptchaimage] T1Lib Support... []
+2013-02-02 14:54:26 [fcaptchaimage] GIF Read Support... [1]
+2013-02-02 14:54:26 [fcaptchaimage] GIF Create Support... [1]
+2013-02-02 14:54:26 [fcaptchaimage] JPEG Support... [1]
+2013-02-02 14:54:26 [fcaptchaimage] PNG Support... [1]
+2013-02-02 14:54:26 [fcaptchaimage] WBMP Support... [1]
+2013-02-02 14:54:26 [fcaptchaimage] XPM Support... []
+2013-02-02 14:54:26 [fcaptchaimage] XBM Support... []
+2013-02-02 14:54:26 [fcaptchaimage] JIS-mapped Japanese Font Support... []
+2013-02-02 14:54:26 [fcaptchaimage] testing function [imagecreate]... [1]
+2013-02-02 14:54:26 [fcaptchaimage] testing function [imagecolorallocate]... [1]
+2013-02-02 14:54:26 [fcaptchaimage] testing function [imagefill]... [1]
+2013-02-02 14:54:26 [fcaptchaimage] testing function [imageline]... [1]
+2013-02-02 14:54:26 [fcaptchaimage] testing function [imagettftext]... [1]
+2013-02-02 14:54:26 [fcaptchaimage] testing function [imagejpeg]... [1]
+2013-02-02 14:54:26 [fcaptchaimage] testing function [imagedestroy]... [1]
+2013-02-02 14:54:26 [fcaptchaimage] --- Method choosen to draw captcha images is [use_gd] ---
+2013-02-02 14:54:26 [fieldsbuilder] --- Determining if this system is able to query DNS records ---
+2013-02-02 14:54:26 [fieldsbuilder] checkdnsrr function found. Let's see if it works.
+2013-02-02 14:54:26 [fieldsbuilder] testing function [checkdnsrr]... [1]
+2013-02-02 14:54:26 [fieldsbuilder] --- Method choosen to query DNS records is [dns_check] ---
+2013-02-02 14:54:26 [fmimetype] --- Determining if this system is able to detect file mime types ---
+2013-02-02 14:54:26 [fmimetype] fileinfo extension found. Let's see if it works.
+2013-02-02 14:54:26 [fmimetype] testing detected mimetype [audio/mpeg; charset=binary] seeking expected string [/^audio\//]... [1]
+2013-02-02 14:54:26 [fmimetype] testing detected mimetype [video/mp4; charset=binary] seeking expected string [/^video\//]... [1]
+2013-02-02 14:54:26 [fmimetype] testing detected mimetype [image/jpeg; charset=binary] seeking expected string [/^image\//]... [1]
+2013-02-02 14:54:26 [fmimetype] testing detected mimetype [application/zip; charset=binary] seeking expected string [/^application\/.*zip/]... [1]
+2013-02-02 14:54:26 [fmimetype] testing detected mimetype [application/pdf; charset=binary] seeking expected string [/^application\/pdf/]... [1]
+2013-02-02 14:54:26 [fmimetype] --- Method choosen to detect file mime types is [use_fileinfo] ---

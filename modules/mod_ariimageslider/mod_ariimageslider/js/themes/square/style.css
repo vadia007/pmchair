@@ -1,0 +1,125 @@
+.ari-image-slider-wrapper {
+	margin: 0 auto;
+}
+
+body .ari-image-slider-wCtrlNav {
+	margin-bottom: 30px;
+}
+
+.nivoSlider {
+	position:relative;
+	margin: 0;
+	background:#202834 url(images/loading.gif) no-repeat 50% 50%;
+	-moz-box-shadow:0px 0px 10px #333;
+	-webkit-box-shadow:0px 0px 10px #333;
+	box-shadow:0px 0px 10px #333;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.nivoSlider a {
+	border:0;
+}
+
+.nivo-controlNavHolder {
+	position:absolute;
+	right:10px;
+	width:auto;
+	top:10px;
+}
+
+.nivo-controlNav a {
+	display:block;
+	width:6px;
+	height:6px;
+	background: black;
+	border: 2px solid black; 
+	/*text-indent:-9999px;*/
+	margin: 0 2px;
+	float:left;
+	opacity: .5;
+	/*filter: alpha(opacity=50);
+	-ms-filter: "alpha(opacity=50)";*/
+	-khtml-opacity: .5;
+	-moz-opacity: .5;
+}
+.nivo-controlNav a:hover {
+	display: block; 
+	border: 2px solid black;
+	background: #6684FF;
+	opacity: 1;
+	/*filter: alpha(opacity=100);
+	-ms-filter: "alpha(opacity=100)";*/
+	-khtml-opacity: 1;
+	-moz-opacity: 1;
+}
+.nivo-controlNav a.active {
+	background: white;
+	opacity: 1;
+	/*filter: alpha(opacity=100);
+	-ms-filter: "alpha(opacity=100)";*/
+	-khtml-opacity: 1;
+	-moz-opacity: 1;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:10px;
+}
+a.nivo-prevNav {
+	left:10px;
+}
+.nivo-controlNav a.hover {
+	background-position:-10px 0;
+}
+.nivo-controlNav .nivo-thumbNavWrapper{
+	left: -2px;
+	top: -2px;
+}
+.nivo-controlNav .nivo-thumbNavWrapper img {
+	display: block !important;
+	position: absolute;
+	top: -100%;
+	left: -50%;
+	margin-top: -12px;
+	border: 1px solid #A0A0A0;
+	background-color: #FFF;
+	padding: 3px;
+	-moz-box-shadow: 0 0 5px #999;
+	-webkit-box-shadow: 0 0 5px #999;
+	-o-box-shadow: 0 0 5px #999;
+	box-shadow: 0 0 5px #999;	
+}
+.nivo-arrow-border {
+  border-color: #0E0E0E transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px;
+  height:0;
+  width:0;
+  position:absolute;
+  bottom:100%;
+  margin-bottom: -5px;
+  left:0;
+}
+.nivo-arrow {
+  border-color: #FFF transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px;
+  height:0;
+  width:0;
+  position:absolute;
+  bottom:100%;
+  margin-bottom: -5px;
+  left:0;
+}

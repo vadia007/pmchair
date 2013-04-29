@@ -1,0 +1,165 @@
+/* Styles for the upload page */
+div#uploadAttachmentsPage {
+    width: 95%;
+    margin: 10px auto 6px auto;
+    text-align: left;
+}
+
+div#uploadAttachmentsPage h1 {
+    font-size: 150%;
+    color: #000;
+}
+
+div#uploadAttachmentsPage h2 {
+    width: 100%;
+    color: #000;
+}
+
+div#uploadAttachmentsPage p {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+div#uploadAttachmentsPage p label {
+    font-weight: bold;
+}
+
+div#uploadAttachmentsPage form.attachments fieldset {
+    padding-bottom: 4px;
+}
+
+div#uploadAttachmentsPage legend {
+    padding: 3px 0;
+}
+
+div#uploadAttachmentsPage #display_name,
+div#uploadAttachmentsPage #description
+{
+    /* background-color: #D9D9D9; */
+    width: 100%;
+}
+
+div#uploadAttachmentsPage div.form_buttons {
+    width: 100%;
+    /* margin: 6px 0 0 0; */
+    text-align: center;
+}
+
+
+/* For button-like links to change/switch */
+
+a.changeButton  {
+    padding: 1px 4px 1px 4px;
+    margin-left: 20px;
+    font-size: 90%;
+    color : #333333;
+    text-decoration: none;
+    background-color: #CCCCCC;
+    border: 1px solid #888888;
+}
+a.changeButton:link    { color : #333333; text-decoration: none; }
+a.changeButton:visited { color : #333333; text-decoration: none; }
+a.changeButton:hover   { color : #333333; text-decoration: none; background-color: #DDDDDD; }
+a.changeButton:active  { color : #333333; text-decoration: none; }
+
+
+/* Styles for upload form */
+
+input#description { width: 100%; }
+input#upload { width: 100%; }
+input#display_name {
+    width: 100%;
+}
+
+p.display_name {
+    margin-top: 12px;
+}
+
+input#upload, input#upload_warning {
+    /* width: 100%;  */
+    margin-top: 4px;
+}
+
+input#upload {
+     /* background-color: #D9D9D9; */
+}
+
+form.attachments {
+    margin: 0;
+}
+
+form.attachments fieldset { 
+    margin: 0;
+    /* padding-right: 20px; */
+}
+
+form.attachments legend {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+form.attachments div.formWarning {
+    width: 95%;
+    font-size: 140%;
+    font-weight: bold;
+    line-height: 120%;
+    padding: 8px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    color: #0000CC;
+    background-color: #FFFF66;
+}
+
+form.attachments input#upload_warning {
+    background-color: #FFFF66;
+}
+
+form.attachments input[type=checkbox] {
+    vertical-align: middle;
+}
+
+form.attachments span.right {
+    float: right;
+}
+
+
+
+/* Styles for lists of attachments on upload/update forms */
+div.attachmentsList caption {
+    font-size: 110%;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* Styles for delete warnings */
+#main div.attachmentsWarning {
+    padding: 10px;
+    margin: 20px;
+}
+
+#main div.attachmentsWarning h1 {
+    line-height: normal;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+
+#main div.attachmentsWarning h2 {
+    line-height: normal;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#main div.attachmentsWarning span.left {
+    width: 8em;
+    float: left;
+}
+
+#main div.attachmentsWarning span.right {
+    width: 8em;
+    float: right;
+}

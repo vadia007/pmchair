@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+        type="module"
+        version="2.5"
+        client="site"
+        method="install">
+    <name>mod_announcement</name>
+    <author>Joomla! Project</author>
+    <creationDate>2012</creationDate>
+    <copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>admin@joomla.org</authorEmail>
+    <version>1.0</version>
+    <description>MOD_FOOTER_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_announcement">mod_announcement.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename>mod_announcement.xml</filename>
+    </files>
+    <languages>
+    </languages>
+    <help key="" />
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field
+                        name="catid"
+                        type="category"
+                        extension="com_content"
+                        multiple="true"
+                        default="Оголошення"
+                        size="8"
+                        label="Категорії"
+                        description="Виберіть категорію" >
+                    <option value="">JOPTION_ALL_CATEGORIES</option>
+                </field>
+
+                <field
+                        name="ordering"
+                        type="list"
+                        default="published"
+                        label="Відображення"
+                        description="Відображати оголошення">
+                    <option
+                            value="l_cre">Останнє створенне</option>
+                    <option
+                            value="l_mod">Останнє змінене</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'NoNumber';
+	src: url('nonumber.eot');
+	src: url('nonumber.eot?#iefix') format('embedded-opentype'), url('nonumber.svg#nonumber') format('svg'), url('nonumber.woff') format('woff'), url('nonumber.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.icon-nonumber::before {
+	font-family: 'NoNumber' !important;
+	font-size: 16px !important;
+	font-style: normal;
+	content: "a";
+	vertical-align: -3px;
+}
+.btn .icon-nonumber {
+	text-indent: -2px;
+}
+i.icon-addtomenu:before {
+	content: "b";
+}
+i.icon-adminbardocker:before {
+	content: "c";
+}
+i.icon-advancedmodulemanager:before {
+	content: "d";
+}
+i.icon-articlesanywhere:before {
+	content: "e";
+}
+i.icon-betterpreview:before {
+	content: "f";
+}
+i.icon-cachecleaner:before {
+	content: "g";
+}
+i.icon-cdnforjoomla:before {
+	content: "h";
+}
+i.icon-contenttemplater:before {
+	content: "i";
+}
+i.icon-customenu:before {
+	content: "j";
+}
+i.icon-dbreplacer:before {
+	content: "k";
+}
+i.icon-modalizer:before {
+	content: "l";
+}
+i.icon-modulesanywhere:before {
+	content: "m";
+}
+i.icon-rereplacer:before {
+	content: "n";
+}
+i.icon-slider:before {
+	content: "o";
+}
+i.icon-snippets:before {
+	content: "p";
+}
+i.icon-sourcerer:before {
+	content: "q";
+}
+i.icon-tabber:before {
+	content: "r";
+}
+i.icon-timedstyles:before {
+	content: "s";
+}
+i.icon-tooltips:before {
+	content: "t";
+}
+i.icon-whatnothing:before {
+	content: " ";
+}
